@@ -22,3 +22,37 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+
+online store:
+
+see products for sale.
+add to cart
+remove from cart
+update cart
+
+
+product 
+ - name
+ - description
+ - price
+ - skew-# 
+ - #instock
+
+cart 
+ - has products
+ - can have products added to it
+ - can have the # of products edited
+ - can have products removed from it
+
+transaction
+ - date & time
+ - shipping address 
+ - items in cart
+ - 
+
+
+
+
+
+
