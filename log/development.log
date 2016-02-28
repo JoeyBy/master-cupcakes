@@ -707,3 +707,1442 @@ Migrating to CreateProducts (20160227204005)
   [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", 2016-02-28 04:14:43 UTC], ["updated_at", 2016-02-28 04:14:43 UTC]]
   [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/product" for ::1 at 2016-02-27 20:45:08 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProductController#index as HTML
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered product/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 1389ms (Views: 1379.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-27 20:45:09 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-02-27 20:45:09 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-27 20:45:09 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-27 20:45:09 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-02-27 20:45:09 -0800
+Started GET "/assets/components/product.self-1a2b5e07edf3e1f98bb3f55442a578eef26dca3a37d471c6f3b677302a79be52.js?body=1" for ::1 at 2016-02-27 20:45:09 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-02-27 20:45:09 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-02-27 20:45:09 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 20:45:09 -0800
+Started GET "/assets/product.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 20:45:09 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-02-27 20:45:09 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-27 20:45:10 -0800
+Started GET "/product" for ::1 at 2016-02-27 20:45:27 -0800
+Processing by ProductController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered product/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 654ms (Views: 649.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-27 20:45:28 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-02-27 20:45:28 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-27 20:45:28 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-02-27 20:45:28 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-02-27 20:45:28 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-27 20:45:28 -0800
+Started GET "/assets/components/product.self-0b7f9518ee2490ed617961f68e761391014118594e11b1cd870c73d18117be50.js?body=1" for ::1 at 2016-02-27 20:45:28 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-02-27 20:45:28 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 20:45:28 -0800
+Started GET "/assets/product.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 20:45:28 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-02-27 20:45:28 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-27 20:45:29 -0800
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "products" ("name", "photo_url", "description", "price", "in_stock", "skew", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "kitty cats"], ["photo_url", "https://s-media-cache-ak0.pinimg.com/236x/d8/7f/0e/d87f0e1ecddb955a74f41e1032a8a136.jpg"], ["description", "Cats are pretty cool, they meow and purr"], ["price", 107.99], ["in_stock", 8], ["skew", "KK-12332"], ["created_at", 2016-02-28 05:03:49 UTC], ["updated_at", 2016-02-28 05:03:49 UTC]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/product" for ::1 at 2016-02-27 21:04:10 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProductController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered product/index.html.erb within layouts/application (14.2ms)
+Completed 200 OK in 1356ms (Views: 1345.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-27 21:04:11 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-02-27 21:04:11 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-27 21:04:11 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-02-27 21:04:11 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-27 21:04:11 -0800
+Started GET "/assets/components/product.self-010c5474edfe39452322106da5258e59a7fbef0126cf67c62c5a94c7f63c8505.js?body=1" for ::1 at 2016-02-27 21:04:11 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-02-27 21:04:11 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:04:11 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-27 21:04:12 -0800
+Started GET "/assets/product.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:04:12 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-02-27 21:04:12 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-02-27 21:04:12 -0800
+Started GET "/product" for ::1 at 2016-02-27 21:04:35 -0800
+Processing by ProductController#index as HTML
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered product/index.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 643ms (Views: 638.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-27 21:04:36 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-02-27 21:04:36 -0800
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-27 21:04:36 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-02-27 21:04:36 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-02-27 21:04:36 -0800
+Started GET "/assets/components/product.self-99caa87b8a52e8bc3138e99af8c5308c41e2e0c35730eac9e1c44f73ec16b112.js?body=1" for ::1 at 2016-02-27 21:04:36 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-02-27 21:04:36 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-27 21:04:36 -0800
+Started GET "/assets/product.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:04:36 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:04:36 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-02-27 21:04:36 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-27 21:04:36 -0800
+Started GET "/product" for ::1 at 2016-02-27 21:04:55 -0800
+Processing by ProductController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered product/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 653ms (Views: 649.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-02-27 21:04:56 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-27 21:04:56 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-27 21:04:56 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-02-27 21:04:56 -0800
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-27 21:04:56 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-27 21:04:56 -0800
+Started GET "/assets/components/product.self-0d9f193ebfffc0d8209690bd850f3ee2dd1481c754091119ce44dc868d99fd8d.js?body=1" for ::1 at 2016-02-27 21:04:56 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:04:56 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-02-27 21:04:56 -0800
+Started GET "/assets/product.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:04:56 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-02-27 21:04:56 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-02-27 21:04:56 -0800
+Started GET "/product" for ::1 at 2016-02-27 21:05:11 -0800
+Processing by ProductController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered product/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 644ms (Views: 639.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-27 21:05:12 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-02-27 21:05:12 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-27 21:05:12 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-02-27 21:05:12 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-02-27 21:05:12 -0800
+Started GET "/assets/components/product.self-8fbcd22f6ae3b439259372cc6ee941193bc1e8b96d1e4c31e021d3c28f84d8ee.js?body=1" for ::1 at 2016-02-27 21:05:12 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-27 21:05:12 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:05:12 -0800
+Started GET "/assets/product.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:05:12 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-02-27 21:05:12 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-02-27 21:05:12 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-27 21:05:12 -0800
+Started GET "/product" for ::1 at 2016-02-27 21:05:13 -0800
+Processing by ProductController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered product/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 25ms (Views: 23.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-27 21:05:13 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-02-27 21:05:13 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-27 21:05:13 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-27 21:05:13 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-27 21:05:13 -0800
+Started GET "/assets/components/product.self-8fbcd22f6ae3b439259372cc6ee941193bc1e8b96d1e4c31e021d3c28f84d8ee.js?body=1" for ::1 at 2016-02-27 21:05:13 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-02-27 21:05:13 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-02-27 21:05:13 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:05:13 -0800
+Started GET "/assets/product.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:05:13 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-02-27 21:05:13 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-02-27 21:05:14 -0800
+Started GET "/product" for ::1 at 2016-02-27 21:05:29 -0800
+Processing by ProductController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered product/index.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 31ms (Views: 27.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-27 21:05:30 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-02-27 21:05:30 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-02-27 21:05:30 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-27 21:05:30 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-02-27 21:05:30 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-27 21:05:30 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-27 21:05:30 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-02-27 21:05:30 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:05:30 -0800
+Started GET "/assets/product.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:05:30 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-02-27 21:05:30 -0800
+Started GET "/assets/components/product.self-010c5474edfe39452322106da5258e59a7fbef0126cf67c62c5a94c7f63c8505.js?body=1" for ::1 at 2016-02-27 21:05:30 -0800
+Started GET "/product" for ::1 at 2016-02-27 21:06:06 -0800
+Processing by ProductController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered product/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 28ms (Views: 24.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-27 21:06:06 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-02-27 21:06:06 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-27 21:06:06 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-27 21:06:06 -0800
+Started GET "/assets/components/product.self-99caa87b8a52e8bc3138e99af8c5308c41e2e0c35730eac9e1c44f73ec16b112.js?body=1" for ::1 at 2016-02-27 21:06:06 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-02-27 21:06:06 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-27 21:06:06 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-02-27 21:06:06 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:06:06 -0800
+Started GET "/assets/product.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:06:06 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-02-27 21:06:06 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-02-27 21:06:07 -0800
+Started GET "/product" for ::1 at 2016-02-27 21:07:30 -0800
+Processing by ProductController#index as HTML
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered product/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 31ms (Views: 28.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-27 21:07:30 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-02-27 21:07:30 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-27 21:07:30 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-02-27 21:07:30 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-02-27 21:07:30 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-27 21:07:30 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-02-27 21:07:30 -0800
+Started GET "/assets/components/product.self-99caa87b8a52e8bc3138e99af8c5308c41e2e0c35730eac9e1c44f73ec16b112.js?body=1" for ::1 at 2016-02-27 21:07:30 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-02-27 21:07:30 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:07:30 -0800
+Started GET "/assets/product.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:07:30 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-27 21:07:30 -0800
+Started GET "/product" for ::1 at 2016-02-27 21:07:31 -0800
+Processing by ProductController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered product/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 22ms (Views: 20.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-27 21:07:31 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-02-27 21:07:31 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-02-27 21:07:31 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-27 21:07:31 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-27 21:07:31 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-02-27 21:07:31 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-27 21:07:31 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-02-27 21:07:31 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:07:31 -0800
+Started GET "/assets/product.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:07:31 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-02-27 21:07:31 -0800
+Started GET "/assets/components/product.self-99caa87b8a52e8bc3138e99af8c5308c41e2e0c35730eac9e1c44f73ec16b112.js?body=1" for ::1 at 2016-02-27 21:07:31 -0800
+Started GET "/product" for ::1 at 2016-02-27 21:09:47 -0800
+Processing by ProductController#index as HTML
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered product/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 22ms (Views: 20.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-27 21:09:47 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-02-27 21:09:47 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-27 21:09:47 -0800
+Started GET "/assets/components/product.self-99caa87b8a52e8bc3138e99af8c5308c41e2e0c35730eac9e1c44f73ec16b112.js?body=1" for ::1 at 2016-02-27 21:09:47 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-02-27 21:09:47 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-27 21:09:47 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-27 21:09:47 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-02-27 21:09:47 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:09:47 -0800
+Started GET "/assets/product.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:09:47 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-02-27 21:09:47 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-02-27 21:09:47 -0800
+Started GET "/product" for ::1 at 2016-02-27 21:10:08 -0800
+Processing by ProductController#index as HTML
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered product/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 25ms (Views: 23.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-27 21:10:08 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-02-27 21:10:08 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-27 21:10:08 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-27 21:10:08 -0800
+Started GET "/assets/components/product.self-99caa87b8a52e8bc3138e99af8c5308c41e2e0c35730eac9e1c44f73ec16b112.js?body=1" for ::1 at 2016-02-27 21:10:08 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:10:08 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-27 21:10:08 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-02-27 21:10:08 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-02-27 21:10:08 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-02-27 21:10:08 -0800
+Started GET "/assets/product.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:10:08 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-02-27 21:10:08 -0800
+Started GET "/product" for ::1 at 2016-02-27 21:10:36 -0800
+Processing by ProductController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered product/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 30ms (Views: 27.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-27 21:10:36 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-27 21:10:36 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-27 21:10:36 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-02-27 21:10:36 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-02-27 21:10:36 -0800
+Started GET "/assets/components/product.self-010c5474edfe39452322106da5258e59a7fbef0126cf67c62c5a94c7f63c8505.js?body=1" for ::1 at 2016-02-27 21:10:36 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-27 21:10:36 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-02-27 21:10:36 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:10:36 -0800
+Started GET "/assets/product.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:10:36 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-02-27 21:10:36 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-02-27 21:10:36 -0800
+Started GET "/product" for ::1 at 2016-02-27 21:10:37 -0800
+Processing by ProductController#index as HTML
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered product/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 20ms (Views: 18.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-27 21:10:37 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-02-27 21:10:37 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-27 21:10:37 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-27 21:10:37 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-27 21:10:37 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-02-27 21:10:37 -0800
+Started GET "/assets/components/product.self-010c5474edfe39452322106da5258e59a7fbef0126cf67c62c5a94c7f63c8505.js?body=1" for ::1 at 2016-02-27 21:10:37 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-02-27 21:10:37 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:10:37 -0800
+Started GET "/assets/product.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:10:37 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-02-27 21:10:37 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-02-27 21:10:37 -0800
+Started GET "/product" for ::1 at 2016-02-27 21:10:43 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProductController#index as HTML
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered product/index.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 229ms (Views: 219.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-27 21:10:43 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-02-27 21:10:43 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-27 21:10:43 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-27 21:10:43 -0800
+Started GET "/assets/components/product.self-010c5474edfe39452322106da5258e59a7fbef0126cf67c62c5a94c7f63c8505.js?body=1" for ::1 at 2016-02-27 21:10:43 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-27 21:10:43 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-02-27 21:10:43 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:10:43 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-02-27 21:10:43 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-02-27 21:10:43 -0800
+Started GET "/assets/product.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:10:43 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-02-27 21:10:44 -0800
+Started GET "/product" for ::1 at 2016-02-27 21:10:51 -0800
+Processing by ProductController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered product/index.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 49ms (Views: 44.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-27 21:10:51 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-02-27 21:10:51 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-27 21:10:51 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-02-27 21:10:52 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-27 21:10:52 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-02-27 21:10:52 -0800
+Started GET "/assets/components/product.self-0b7f9518ee2490ed617961f68e761391014118594e11b1cd870c73d18117be50.js?body=1" for ::1 at 2016-02-27 21:10:52 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-27 21:10:52 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-02-27 21:10:52 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:10:52 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-02-27 21:10:52 -0800
+Started GET "/assets/product.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:10:52 -0800
+Started GET "/product" for ::1 at 2016-02-27 21:11:14 -0800
+Processing by ProductController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered product/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 60ms (Views: 55.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-02-27 21:11:14 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-27 21:11:14 -0800
+Started GET "/assets/components/product.self-010c5474edfe39452322106da5258e59a7fbef0126cf67c62c5a94c7f63c8505.js?body=1" for ::1 at 2016-02-27 21:11:14 -0800
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-27 21:11:14 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-02-27 21:11:14 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-02-27 21:11:14 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-27 21:11:14 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:11:14 -0800
+Started GET "/assets/product.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:11:14 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-27 21:11:14 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-02-27 21:11:14 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-02-27 21:11:14 -0800
+Started GET "/product" for ::1 at 2016-02-27 21:11:15 -0800
+Processing by ProductController#index as HTML
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered product/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 54ms (Views: 51.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-27 21:11:15 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-02-27 21:11:15 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-27 21:11:15 -0800
+Started GET "/assets/components/product.self-010c5474edfe39452322106da5258e59a7fbef0126cf67c62c5a94c7f63c8505.js?body=1" for ::1 at 2016-02-27 21:11:15 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-02-27 21:11:15 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-02-27 21:11:15 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-27 21:11:15 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-02-27 21:11:15 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:11:15 -0800
+Started GET "/assets/product.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:11:15 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-02-27 21:11:15 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-27 21:11:16 -0800
+Started GET "/product" for ::1 at 2016-02-27 21:11:28 -0800
+Processing by ProductController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered product/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 36ms (Views: 31.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-27 21:11:28 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-27 21:11:28 -0800
+Started GET "/assets/components/product.self-010c5474edfe39452322106da5258e59a7fbef0126cf67c62c5a94c7f63c8505.js?body=1" for ::1 at 2016-02-27 21:11:28 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-02-27 21:11:28 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-02-27 21:11:28 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-27 21:11:28 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:11:28 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-27 21:11:29 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-02-27 21:11:29 -0800
+Started GET "/assets/product.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:11:29 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-02-27 21:11:29 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-02-27 21:11:29 -0800
+Started GET "/product" for ::1 at 2016-02-27 21:11:41 -0800
+Processing by ProductController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered product/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 21ms (Views: 18.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-27 21:11:41 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-02-27 21:11:41 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-27 21:11:41 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-02-27 21:11:41 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-27 21:11:41 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-27 21:11:41 -0800
+Started GET "/assets/components/product.self-010c5474edfe39452322106da5258e59a7fbef0126cf67c62c5a94c7f63c8505.js?body=1" for ::1 at 2016-02-27 21:11:41 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-02-27 21:11:41 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:11:41 -0800
+Started GET "/assets/product.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:11:41 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-02-27 21:11:41 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-02-27 21:11:41 -0800
+Started GET "/product" for ::1 at 2016-02-27 21:12:02 -0800
+Processing by ProductController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered product/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 34ms (Views: 30.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-27 21:12:02 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-02-27 21:12:02 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-27 21:12:02 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-27 21:12:02 -0800
+Started GET "/assets/components/product.self-8fbcd22f6ae3b439259372cc6ee941193bc1e8b96d1e4c31e021d3c28f84d8ee.js?body=1" for ::1 at 2016-02-27 21:12:02 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-27 21:12:02 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-02-27 21:12:02 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-02-27 21:12:02 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:12:02 -0800
+Started GET "/assets/product.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:12:02 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-02-27 21:12:02 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-02-27 21:12:03 -0800
+Started GET "/product" for ::1 at 2016-02-27 21:12:04 -0800
+Processing by ProductController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered product/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 21ms (Views: 19.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-27 21:12:04 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-02-27 21:12:04 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-02-27 21:12:04 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-02-27 21:12:04 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-27 21:12:04 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-27 21:12:04 -0800
+Started GET "/assets/components/product.self-8fbcd22f6ae3b439259372cc6ee941193bc1e8b96d1e4c31e021d3c28f84d8ee.js?body=1" for ::1 at 2016-02-27 21:12:04 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-02-27 21:12:04 -0800
+Started GET "/assets/product.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:12:04 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:12:04 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-02-27 21:12:04 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-27 21:12:04 -0800
+Started GET "/product" for ::1 at 2016-02-27 21:23:24 -0800
+Processing by ProductController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered product/index.html.erb within layouts/application (7.0ms)
+Completed 500 Internal Server Error in 1368ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (SyntaxError: unknown: Unexpected token (7:3)
+   5 |       return <Product key={index} />
+   6 |     });
+>  7 |   };
+     |    ^
+   8 | 
+   9 |   return (
+  10 |     <div className="container">):
+     6:     <%= action_cable_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => 'reload' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => 'reload' %>
+    10:   </head>
+    11: 
+    12:   <body>
+  
+app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb__4348689493287238932_70188167353540'
+  Rendered /Users/Joey/.rvm/gems/ruby-2.3.0@rails5.0/gems/actionpack-5.0.0.beta3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.2ms)
+  Rendered /Users/Joey/.rvm/gems/ruby-2.3.0@rails5.0/gems/actionpack-5.0.0.beta3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/Joey/.rvm/gems/ruby-2.3.0@rails5.0/gems/actionpack-5.0.0.beta3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/Joey/.rvm/gems/ruby-2.3.0@rails5.0/gems/actionpack-5.0.0.beta3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (54.0ms)
+  Rendered /Users/Joey/.rvm/gems/ruby-2.3.0@rails5.0/gems/web-console-3.1.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/Joey/.rvm/gems/ruby-2.3.0@rails5.0/gems/web-console-3.1.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Joey/.rvm/gems/ruby-2.3.0@rails5.0/gems/web-console-3.1.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Joey/.rvm/gems/ruby-2.3.0@rails5.0/gems/web-console-3.1.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Joey/.rvm/gems/ruby-2.3.0@rails5.0/gems/web-console-3.1.1/lib/web_console/templates/console.js.erb within layouts/javascript (50.0ms)
+  Rendered /Users/Joey/.rvm/gems/ruby-2.3.0@rails5.0/gems/web-console-3.1.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/Joey/.rvm/gems/ruby-2.3.0@rails5.0/gems/web-console-3.1.1/lib/web_console/templates/index.html.erb (88.4ms)
+Started GET "/product" for ::1 at 2016-02-27 21:31:45 -0800
+Processing by ProductController#index as HTML
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered product/index.html.erb within layouts/application (1.7ms)
+Completed 500 Internal Server Error in 512ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (SyntaxError: unknown: Unexpected token (7:3)
+   5 |       return <Product key={index} />
+   6 |     });
+>  7 |   };
+     |    ^
+   8 | 
+   9 |   return (
+  10 |     <div className="container">):
+     6:     <%= action_cable_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => 'reload' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => 'reload' %>
+    10:   </head>
+    11: 
+    12:   <body>
+  
+app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb__4348689493287238932_70188149845660'
+  Rendered /Users/Joey/.rvm/gems/ruby-2.3.0@rails5.0/gems/actionpack-5.0.0.beta3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.1ms)
+  Rendered /Users/Joey/.rvm/gems/ruby-2.3.0@rails5.0/gems/actionpack-5.0.0.beta3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/Joey/.rvm/gems/ruby-2.3.0@rails5.0/gems/actionpack-5.0.0.beta3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/Joey/.rvm/gems/ruby-2.3.0@rails5.0/gems/actionpack-5.0.0.beta3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (59.3ms)
+  Rendered /Users/Joey/.rvm/gems/ruby-2.3.0@rails5.0/gems/web-console-3.1.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/Joey/.rvm/gems/ruby-2.3.0@rails5.0/gems/web-console-3.1.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Joey/.rvm/gems/ruby-2.3.0@rails5.0/gems/web-console-3.1.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/Joey/.rvm/gems/ruby-2.3.0@rails5.0/gems/web-console-3.1.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/Joey/.rvm/gems/ruby-2.3.0@rails5.0/gems/web-console-3.1.1/lib/web_console/templates/console.js.erb within layouts/javascript (53.0ms)
+  Rendered /Users/Joey/.rvm/gems/ruby-2.3.0@rails5.0/gems/web-console-3.1.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/Joey/.rvm/gems/ruby-2.3.0@rails5.0/gems/web-console-3.1.1/lib/web_console/templates/index.html.erb (97.2ms)
+Started GET "/product" for ::1 at 2016-02-27 21:35:26 -0800
+Processing by ProductController#index as HTML
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered product/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 658ms (Views: 655.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-27 21:35:27 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-27 21:35:27 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-02-27 21:35:27 -0800
+Started GET "/assets/components/product.self-010c5474edfe39452322106da5258e59a7fbef0126cf67c62c5a94c7f63c8505.js?body=1" for ::1 at 2016-02-27 21:35:27 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-27 21:35:27 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-02-27 21:35:27 -0800
+Started GET "/assets/components/products.self-7280b167852f5449f6ef03dbbf8bbbbdc7023cea28aa7ee9119c30b0cb87a39b.js?body=1" for ::1 at 2016-02-27 21:35:27 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-27 21:35:27 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-02-27 21:35:27 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:35:27 -0800
+Started GET "/assets/product.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:35:27 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-02-27 21:35:27 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-02-27 21:35:27 -0800
+Started GET "/product" for ::1 at 2016-02-27 21:36:18 -0800
+Processing by ProductController#index as HTML
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered product/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 28ms (Views: 26.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-27 21:36:18 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-02-27 21:36:18 -0800
+Started GET "/assets/components/product.self-010c5474edfe39452322106da5258e59a7fbef0126cf67c62c5a94c7f63c8505.js?body=1" for ::1 at 2016-02-27 21:36:18 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-27 21:36:18 -0800
+Started GET "/assets/components/products.self-7280b167852f5449f6ef03dbbf8bbbbdc7023cea28aa7ee9119c30b0cb87a39b.js?body=1" for ::1 at 2016-02-27 21:36:18 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-27 21:36:18 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-27 21:36:18 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-02-27 21:36:18 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-02-27 21:36:18 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:36:18 -0800
+Started GET "/assets/product.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:36:18 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-02-27 21:36:18 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-02-27 21:36:18 -0800
+Started GET "/product" for ::1 at 2016-02-27 21:36:19 -0800
+Processing by ProductController#index as HTML
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered product/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 26ms (Views: 24.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-02-27 21:36:19 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-27 21:36:19 -0800
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-27 21:36:19 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-02-27 21:36:19 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-02-27 21:36:19 -0800
+Started GET "/assets/components/product.self-010c5474edfe39452322106da5258e59a7fbef0126cf67c62c5a94c7f63c8505.js?body=1" for ::1 at 2016-02-27 21:36:19 -0800
+Started GET "/assets/components/products.self-7280b167852f5449f6ef03dbbf8bbbbdc7023cea28aa7ee9119c30b0cb87a39b.js?body=1" for ::1 at 2016-02-27 21:36:19 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-27 21:36:19 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-02-27 21:36:19 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:36:19 -0800
+Started GET "/assets/product.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:36:19 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-02-27 21:36:19 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-27 21:36:19 -0800
+Started GET "/product" for ::1 at 2016-02-27 21:36:50 -0800
+Processing by ProductController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered product/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 596ms (Views: 592.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-27 21:36:51 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-02-27 21:36:51 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-27 21:36:51 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-27 21:36:51 -0800
+Started GET "/assets/components/products.self-7280b167852f5449f6ef03dbbf8bbbbdc7023cea28aa7ee9119c30b0cb87a39b.js?body=1" for ::1 at 2016-02-27 21:36:51 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-02-27 21:36:51 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-02-27 21:36:51 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:36:51 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-02-27 21:36:51 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-27 21:36:51 -0800
+Started GET "/assets/product.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:36:51 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-02-27 21:36:51 -0800
+Started GET "/assets/components/product.self-99caa87b8a52e8bc3138e99af8c5308c41e2e0c35730eac9e1c44f73ec16b112.js?body=1" for ::1 at 2016-02-27 21:36:51 -0800
+Started GET "/product" for ::1 at 2016-02-27 21:42:00 -0800
+Processing by ProductController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered product/index.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (Missing partial shared/_nav with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/Joey/Documents/rails-react/app/views"
+):
+    12:   </head>
+    13: 
+    14:   <body>
+    15:     <%= render 'shared/nav' %>
+    16:     <%= yield %>
+    17:   </body>
+    18: </html>
+  
+app/views/layouts/application.html.erb:15:in `_app_views_layouts_application_html_erb__4348689493287238932_70188163431340'
+  Rendered /Users/Joey/.rvm/gems/ruby-2.3.0@rails5.0/gems/actionpack-5.0.0.beta3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.8ms)
+  Rendered /Users/Joey/.rvm/gems/ruby-2.3.0@rails5.0/gems/actionpack-5.0.0.beta3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/Joey/.rvm/gems/ruby-2.3.0@rails5.0/gems/actionpack-5.0.0.beta3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/Joey/.rvm/gems/ruby-2.3.0@rails5.0/gems/actionpack-5.0.0.beta3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (47.1ms)
+  Rendered /Users/Joey/.rvm/gems/ruby-2.3.0@rails5.0/gems/web-console-3.1.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/Joey/.rvm/gems/ruby-2.3.0@rails5.0/gems/web-console-3.1.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/Joey/.rvm/gems/ruby-2.3.0@rails5.0/gems/web-console-3.1.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Joey/.rvm/gems/ruby-2.3.0@rails5.0/gems/web-console-3.1.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Joey/.rvm/gems/ruby-2.3.0@rails5.0/gems/web-console-3.1.1/lib/web_console/templates/console.js.erb within layouts/javascript (40.9ms)
+  Rendered /Users/Joey/.rvm/gems/ruby-2.3.0@rails5.0/gems/web-console-3.1.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/Joey/.rvm/gems/ruby-2.3.0@rails5.0/gems/web-console-3.1.1/lib/web_console/templates/index.html.erb (78.1ms)
+Started GET "/product" for ::1 at 2016-02-27 21:42:19 -0800
+Processing by ProductController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered product/index.html.erb within layouts/application (2.2ms)
+  Rendered shared/_nav.html.erb (0.3ms)
+Completed 200 OK in 35ms (Views: 33.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-27 21:42:19 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-02-27 21:42:19 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-27 21:42:19 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-27 21:42:19 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-02-27 21:42:19 -0800
+Started GET "/assets/components/product.self-99caa87b8a52e8bc3138e99af8c5308c41e2e0c35730eac9e1c44f73ec16b112.js?body=1" for ::1 at 2016-02-27 21:42:19 -0800
+Started GET "/assets/components/products.self-7280b167852f5449f6ef03dbbf8bbbbdc7023cea28aa7ee9119c30b0cb87a39b.js?body=1" for ::1 at 2016-02-27 21:42:19 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-27 21:42:19 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-02-27 21:42:19 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:42:19 -0800
+Started GET "/assets/product.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:42:19 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-02-27 21:42:19 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-02-27 21:42:19 -0800
+Started GET "/product" for ::1 at 2016-02-27 21:43:35 -0800
+Processing by ProductController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered product/index.html.erb within layouts/application (1.7ms)
+  Rendered shared/_nav.html.erb (0.3ms)
+Completed 200 OK in 179ms (Views: 175.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/main.self-be3be8f810451d326a42481150815839f1a8869668bc71aae990def14ca398bf.css?body=1" for ::1 at 2016-02-27 21:43:35 -0800
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-27 21:43:35 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-02-27 21:43:35 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-27 21:43:35 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-02-27 21:43:35 -0800
+Started GET "/assets/components/product.self-99caa87b8a52e8bc3138e99af8c5308c41e2e0c35730eac9e1c44f73ec16b112.js?body=1" for ::1 at 2016-02-27 21:43:35 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-27 21:43:35 -0800
+Started GET "/assets/components/products.self-7280b167852f5449f6ef03dbbf8bbbbdc7023cea28aa7ee9119c30b0cb87a39b.js?body=1" for ::1 at 2016-02-27 21:43:35 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-27 21:43:35 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-02-27 21:43:35 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:43:35 -0800
+Started GET "/assets/product.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:43:35 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-02-27 21:43:35 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-02-27 21:43:35 -0800
+Started GET "/product" for ::1 at 2016-02-27 21:44:59 -0800
+Processing by ProductController#index as HTML
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered product/index.html.erb within layouts/application (1.2ms)
+  Rendered shared/_nav.html.erb (0.6ms)
+Completed 200 OK in 46ms (Views: 44.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/main.self-614fa19dfe13288a2a84627dac358d0bd02374a5fe651885b096bfdc59335a64.css?body=1" for ::1 at 2016-02-27 21:44:59 -0800
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-27 21:44:59 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-02-27 21:44:59 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-27 21:44:59 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-02-27 21:44:59 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-27 21:44:59 -0800
+Started GET "/assets/components/product.self-99caa87b8a52e8bc3138e99af8c5308c41e2e0c35730eac9e1c44f73ec16b112.js?body=1" for ::1 at 2016-02-27 21:44:59 -0800
+Started GET "/assets/components/products.self-7280b167852f5449f6ef03dbbf8bbbbdc7023cea28aa7ee9119c30b0cb87a39b.js?body=1" for ::1 at 2016-02-27 21:44:59 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-27 21:44:59 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-02-27 21:44:59 -0800
+Started GET "/assets/product.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:44:59 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-02-27 21:44:59 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:44:59 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-02-27 21:45:00 -0800
+Started GET "/product" for ::1 at 2016-02-27 21:45:15 -0800
+Processing by ProductController#index as HTML
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered product/index.html.erb within layouts/application (1.2ms)
+  Rendered shared/_nav.html.erb (0.5ms)
+Completed 200 OK in 50ms (Views: 48.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/main.self-578d44669bc264daebab1aa663ba61c29c86ad8c33b5460c81d2f27a522d823c.css?body=1" for ::1 at 2016-02-27 21:45:15 -0800
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-27 21:45:15 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-02-27 21:45:15 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-27 21:45:15 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-27 21:45:15 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-02-27 21:45:15 -0800
+Started GET "/assets/components/product.self-99caa87b8a52e8bc3138e99af8c5308c41e2e0c35730eac9e1c44f73ec16b112.js?body=1" for ::1 at 2016-02-27 21:45:15 -0800
+Started GET "/assets/components/products.self-7280b167852f5449f6ef03dbbf8bbbbdc7023cea28aa7ee9119c30b0cb87a39b.js?body=1" for ::1 at 2016-02-27 21:45:15 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-02-27 21:45:15 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:45:15 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-27 21:45:15 -0800
+Started GET "/assets/product.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:45:15 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-02-27 21:45:15 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-02-27 21:45:16 -0800
+Started GET "/product" for ::1 at 2016-02-27 21:46:35 -0800
+Processing by ProductController#index as HTML
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered product/index.html.erb within layouts/application (1.2ms)
+  Rendered shared/_nav.html.erb (0.5ms)
+Completed 200 OK in 45ms (Views: 43.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/main.self-9b2df7ff186e17db38ccda0eba5875568d41c52406986b2bda94ccb8f944ba41.css?body=1" for ::1 at 2016-02-27 21:46:35 -0800
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-27 21:46:35 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-02-27 21:46:35 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-27 21:46:35 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-27 21:46:35 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-02-27 21:46:35 -0800
+Started GET "/assets/components/product.self-99caa87b8a52e8bc3138e99af8c5308c41e2e0c35730eac9e1c44f73ec16b112.js?body=1" for ::1 at 2016-02-27 21:46:35 -0800
+Started GET "/assets/components/products.self-7280b167852f5449f6ef03dbbf8bbbbdc7023cea28aa7ee9119c30b0cb87a39b.js?body=1" for ::1 at 2016-02-27 21:46:35 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-27 21:46:35 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-02-27 21:46:35 -0800
+Started GET "/assets/product.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:46:35 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:46:35 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-02-27 21:46:35 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-02-27 21:46:35 -0800
+Started GET "/product" for ::1 at 2016-02-27 21:49:13 -0800
+Processing by ProductController#index as HTML
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered product/index.html.erb within layouts/application (2.0ms)
+  Rendered shared/_nav.html.erb (0.4ms)
+Completed 200 OK in 48ms (Views: 46.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/main.self-7e199ed07ce5004e154ab9161b36c80d28bedcd82d5ffc1c5621028a62e126a5.css?body=1" for ::1 at 2016-02-27 21:49:14 -0800
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-27 21:49:14 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-02-27 21:49:14 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-27 21:49:14 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-02-27 21:49:14 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-27 21:49:14 -0800
+Started GET "/assets/components/product.self-99caa87b8a52e8bc3138e99af8c5308c41e2e0c35730eac9e1c44f73ec16b112.js?body=1" for ::1 at 2016-02-27 21:49:14 -0800
+Started GET "/assets/components/products.self-7280b167852f5449f6ef03dbbf8bbbbdc7023cea28aa7ee9119c30b0cb87a39b.js?body=1" for ::1 at 2016-02-27 21:49:14 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-27 21:49:14 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-02-27 21:49:14 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:49:14 -0800
+Started GET "/assets/product.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:49:14 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-02-27 21:49:14 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-02-27 21:49:14 -0800
+Started GET "/product" for ::1 at 2016-02-27 21:49:52 -0800
+Processing by ProductController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered product/index.html.erb within layouts/application (2.3ms)
+  Rendered shared/_nav.html.erb (0.5ms)
+Completed 200 OK in 51ms (Views: 49.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-27 21:49:52 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-02-27 21:49:52 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-27 21:49:52 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-27 21:49:52 -0800
+Started GET "/assets/components/product.self-99caa87b8a52e8bc3138e99af8c5308c41e2e0c35730eac9e1c44f73ec16b112.js?body=1" for ::1 at 2016-02-27 21:49:52 -0800
+Started GET "/assets/main.self-3ffa2b781be0c58715efcc60d6080cbb97ed25e3707e2753e335b6b4001d1e9e.css?body=1" for ::1 at 2016-02-27 21:49:52 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-02-27 21:49:52 -0800
+Started GET "/assets/components/products.self-7280b167852f5449f6ef03dbbf8bbbbdc7023cea28aa7ee9119c30b0cb87a39b.js?body=1" for ::1 at 2016-02-27 21:49:52 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-27 21:49:52 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-02-27 21:49:52 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:49:52 -0800
+Started GET "/assets/product.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:49:52 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-02-27 21:49:52 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-02-27 21:49:53 -0800
+Started GET "/product" for ::1 at 2016-02-27 21:50:06 -0800
+Processing by ProductController#index as HTML
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered product/index.html.erb within layouts/application (1.3ms)
+  Rendered shared/_nav.html.erb (0.5ms)
+Completed 200 OK in 46ms (Views: 43.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/main.self-376f230d619ceaf935acc2ecc3bb84d0652850ca9a41e8713dc4e5de0f5e1f39.css?body=1" for ::1 at 2016-02-27 21:50:06 -0800
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-27 21:50:06 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-02-27 21:50:06 -0800
+Started GET "/assets/components/product.self-99caa87b8a52e8bc3138e99af8c5308c41e2e0c35730eac9e1c44f73ec16b112.js?body=1" for ::1 at 2016-02-27 21:50:06 -0800
+Started GET "/assets/components/products.self-7280b167852f5449f6ef03dbbf8bbbbdc7023cea28aa7ee9119c30b0cb87a39b.js?body=1" for ::1 at 2016-02-27 21:50:06 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-02-27 21:50:06 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-27 21:50:06 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-02-27 21:50:06 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-27 21:50:06 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:50:06 -0800
+Started GET "/assets/product.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:50:06 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-02-27 21:50:06 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-02-27 21:50:06 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-27 21:50:06 -0800
+Started GET "/product" for ::1 at 2016-02-27 21:50:08 -0800
+Processing by ProductController#index as HTML
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered product/index.html.erb within layouts/application (1.1ms)
+  Rendered shared/_nav.html.erb (0.3ms)
+Completed 200 OK in 35ms (Views: 33.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/main.self-376f230d619ceaf935acc2ecc3bb84d0652850ca9a41e8713dc4e5de0f5e1f39.css?body=1" for ::1 at 2016-02-27 21:50:08 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-02-27 21:50:08 -0800
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-27 21:50:08 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-02-27 21:50:08 -0800
+Started GET "/assets/components/product.self-99caa87b8a52e8bc3138e99af8c5308c41e2e0c35730eac9e1c44f73ec16b112.js?body=1" for ::1 at 2016-02-27 21:50:08 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-27 21:50:08 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-02-27 21:50:08 -0800
+Started GET "/assets/components/products.self-7280b167852f5449f6ef03dbbf8bbbbdc7023cea28aa7ee9119c30b0cb87a39b.js?body=1" for ::1 at 2016-02-27 21:50:08 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-27 21:50:08 -0800
+Started GET "/assets/product.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:50:08 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:50:08 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-02-27 21:50:08 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-02-27 21:50:08 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-27 21:50:08 -0800
+Started GET "/product" for ::1 at 2016-02-27 21:50:24 -0800
+Processing by ProductController#index as HTML
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered product/index.html.erb within layouts/application (1.7ms)
+  Rendered shared/_nav.html.erb (0.5ms)
+Completed 200 OK in 49ms (Views: 47.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/main.self-4146ade8ec199e9e1816ade3250da25954ee294cb70b844f7c6016305ea10cbb.css?body=1" for ::1 at 2016-02-27 21:50:24 -0800
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-27 21:50:24 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-02-27 21:50:24 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-27 21:50:24 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-02-27 21:50:24 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-27 21:50:24 -0800
+Started GET "/assets/components/product.self-99caa87b8a52e8bc3138e99af8c5308c41e2e0c35730eac9e1c44f73ec16b112.js?body=1" for ::1 at 2016-02-27 21:50:24 -0800
+Started GET "/assets/components/products.self-7280b167852f5449f6ef03dbbf8bbbbdc7023cea28aa7ee9119c30b0cb87a39b.js?body=1" for ::1 at 2016-02-27 21:50:24 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-27 21:50:24 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-02-27 21:50:24 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:50:24 -0800
+Started GET "/assets/product.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:50:24 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-02-27 21:50:24 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-02-27 21:50:24 -0800
+Started GET "/product" for ::1 at 2016-02-27 21:50:50 -0800
+Processing by ProductController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered product/index.html.erb within layouts/application (2.1ms)
+  Rendered shared/_nav.html.erb (0.5ms)
+Completed 200 OK in 45ms (Views: 43.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/main.self-469e1548c10d94855affe853de5b1484b072159f0bdb03104b45efe68ce9ea01.css?body=1" for ::1 at 2016-02-27 21:50:51 -0800
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-27 21:50:51 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-02-27 21:50:51 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-02-27 21:50:51 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-27 21:50:51 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-27 21:50:51 -0800
+Started GET "/assets/components/product.self-99caa87b8a52e8bc3138e99af8c5308c41e2e0c35730eac9e1c44f73ec16b112.js?body=1" for ::1 at 2016-02-27 21:50:51 -0800
+Started GET "/assets/components/products.self-7280b167852f5449f6ef03dbbf8bbbbdc7023cea28aa7ee9119c30b0cb87a39b.js?body=1" for ::1 at 2016-02-27 21:50:51 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-27 21:50:51 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-02-27 21:50:51 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:50:51 -0800
+Started GET "/assets/product.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:50:51 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-02-27 21:50:51 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-02-27 21:50:51 -0800
+Started GET "/product" for ::1 at 2016-02-27 21:51:04 -0800
+Processing by ProductController#index as HTML
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered product/index.html.erb within layouts/application (1.5ms)
+  Rendered shared/_nav.html.erb (0.4ms)
+Completed 200 OK in 33ms (Views: 31.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/main.self-4146ade8ec199e9e1816ade3250da25954ee294cb70b844f7c6016305ea10cbb.css?body=1" for ::1 at 2016-02-27 21:51:04 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-02-27 21:51:04 -0800
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-27 21:51:04 -0800
+Started GET "/assets/components/product.self-99caa87b8a52e8bc3138e99af8c5308c41e2e0c35730eac9e1c44f73ec16b112.js?body=1" for ::1 at 2016-02-27 21:51:04 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-27 21:51:04 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-27 21:51:04 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-02-27 21:51:04 -0800
+Started GET "/assets/components/products.self-7280b167852f5449f6ef03dbbf8bbbbdc7023cea28aa7ee9119c30b0cb87a39b.js?body=1" for ::1 at 2016-02-27 21:51:04 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-27 21:51:04 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-02-27 21:51:04 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:51:04 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-02-27 21:51:04 -0800
+Started GET "/assets/product.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:51:04 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-02-27 21:51:04 -0800
+Started GET "/product" for ::1 at 2016-02-27 21:51:36 -0800
+Processing by ProductController#index as HTML
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered product/index.html.erb within layouts/application (1.0ms)
+  Rendered shared/_nav.html.erb (0.3ms)
+Completed 200 OK in 36ms (Views: 34.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/main.self-b51bd34bca6e509907d07db2374bb9e069032327f72374ff65f9b6a7d169052a.css?body=1" for ::1 at 2016-02-27 21:51:36 -0800
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-27 21:51:36 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-02-27 21:51:36 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-02-27 21:51:36 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-27 21:51:36 -0800
+Started GET "/assets/components/product.self-99caa87b8a52e8bc3138e99af8c5308c41e2e0c35730eac9e1c44f73ec16b112.js?body=1" for ::1 at 2016-02-27 21:51:36 -0800
+Started GET "/assets/components/products.self-7280b167852f5449f6ef03dbbf8bbbbdc7023cea28aa7ee9119c30b0cb87a39b.js?body=1" for ::1 at 2016-02-27 21:51:36 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-27 21:51:36 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-27 21:51:36 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-02-27 21:51:36 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:51:36 -0800
+Started GET "/assets/product.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:51:36 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-02-27 21:51:36 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-02-27 21:51:36 -0800
+Started GET "/product" for ::1 at 2016-02-27 21:51:55 -0800
+Processing by ProductController#index as HTML
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered product/index.html.erb within layouts/application (1.2ms)
+  Rendered shared/_nav.html.erb (0.5ms)
+Completed 200 OK in 41ms (Views: 39.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/main.self-a60b0615b43760651daefc5dc16449a14818fddc167953ba9a67bf4dfa419aeb.css?body=1" for ::1 at 2016-02-27 21:51:55 -0800
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-27 21:51:55 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-02-27 21:51:55 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-02-27 21:51:55 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-02-27 21:51:55 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-27 21:51:55 -0800
+Started GET "/assets/components/product.self-99caa87b8a52e8bc3138e99af8c5308c41e2e0c35730eac9e1c44f73ec16b112.js?body=1" for ::1 at 2016-02-27 21:51:55 -0800
+Started GET "/assets/components/products.self-7280b167852f5449f6ef03dbbf8bbbbdc7023cea28aa7ee9119c30b0cb87a39b.js?body=1" for ::1 at 2016-02-27 21:51:55 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-27 21:51:55 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-02-27 21:51:55 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:51:55 -0800
+Started GET "/assets/product.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:51:55 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-02-27 21:51:55 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-27 21:51:56 -0800
+Started GET "/product" for ::1 at 2016-02-27 21:52:24 -0800
+Processing by ProductController#index as HTML
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered product/index.html.erb within layouts/application (1.2ms)
+  Rendered shared/_nav.html.erb (0.3ms)
+Completed 200 OK in 39ms (Views: 37.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/main.self-f6d21d6dc6ded29f89ac32b4961549cd0b7b4d21e6f41e4e2087750adda3a0ea.css?body=1" for ::1 at 2016-02-27 21:52:24 -0800
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-27 21:52:24 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-02-27 21:52:24 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-02-27 21:52:24 -0800
+Started GET "/assets/components/product.self-99caa87b8a52e8bc3138e99af8c5308c41e2e0c35730eac9e1c44f73ec16b112.js?body=1" for ::1 at 2016-02-27 21:52:24 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-27 21:52:24 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-27 21:52:24 -0800
+Started GET "/assets/components/products.self-7280b167852f5449f6ef03dbbf8bbbbdc7023cea28aa7ee9119c30b0cb87a39b.js?body=1" for ::1 at 2016-02-27 21:52:24 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-27 21:52:24 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-02-27 21:52:24 -0800
+Started GET "/assets/product.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:52:24 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-02-27 21:52:24 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:52:24 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-02-27 21:52:24 -0800
+Started GET "/product" for ::1 at 2016-02-27 21:52:42 -0800
+Processing by ProductController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered product/index.html.erb within layouts/application (2.4ms)
+  Rendered shared/_nav.html.erb (0.3ms)
+Completed 200 OK in 39ms (Views: 37.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/main.self-ad5e08fdb2e23e4406c253711c23a235c00c651ab19f670c710fc12d6636d0c0.css?body=1" for ::1 at 2016-02-27 21:52:42 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-02-27 21:52:42 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-27 21:52:42 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-27 21:52:42 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-02-27 21:52:42 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-02-27 21:52:42 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-27 21:52:42 -0800
+Started GET "/assets/components/products.self-7280b167852f5449f6ef03dbbf8bbbbdc7023cea28aa7ee9119c30b0cb87a39b.js?body=1" for ::1 at 2016-02-27 21:52:42 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-02-27 21:52:42 -0800
+Started GET "/assets/components/product.self-99caa87b8a52e8bc3138e99af8c5308c41e2e0c35730eac9e1c44f73ec16b112.js?body=1" for ::1 at 2016-02-27 21:52:42 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:52:42 -0800
+Started GET "/assets/product.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:52:42 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-02-27 21:52:42 -0800
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-27 21:52:42 -0800
+Started GET "/product" for ::1 at 2016-02-27 21:53:15 -0800
+Processing by ProductController#index as HTML
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered product/index.html.erb within layouts/application (1.1ms)
+  Rendered shared/_nav.html.erb (0.3ms)
+Completed 200 OK in 39ms (Views: 37.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/main.self-36a5d4e73006dfdaa8219a9d7d0e6735715a92ffad1bb7753b31cd41a3e271f4.css?body=1" for ::1 at 2016-02-27 21:53:15 -0800
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-27 21:53:15 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-02-27 21:53:15 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-27 21:53:15 -0800
+Started GET "/assets/components/product.self-99caa87b8a52e8bc3138e99af8c5308c41e2e0c35730eac9e1c44f73ec16b112.js?body=1" for ::1 at 2016-02-27 21:53:15 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-02-27 21:53:15 -0800
+Started GET "/assets/components/products.self-7280b167852f5449f6ef03dbbf8bbbbdc7023cea28aa7ee9119c30b0cb87a39b.js?body=1" for ::1 at 2016-02-27 21:53:15 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-27 21:53:15 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-27 21:53:15 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-02-27 21:53:15 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:53:15 -0800
+Started GET "/assets/product.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:53:15 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-02-27 21:53:15 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-02-27 21:53:15 -0800
+Started GET "/product" for ::1 at 2016-02-27 21:53:28 -0800
+Processing by ProductController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered product/index.html.erb within layouts/application (1.8ms)
+  Rendered shared/_nav.html.erb (0.5ms)
+Completed 200 OK in 46ms (Views: 44.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/main.self-4123116fd76aec14e16b37e4bbb7b417181e9aa7c48616e2a203b3866a012a43.css?body=1" for ::1 at 2016-02-27 21:53:28 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-02-27 21:53:28 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-27 21:53:28 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-27 21:53:28 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-02-27 21:53:28 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-02-27 21:53:28 -0800
+Started GET "/assets/components/products.self-7280b167852f5449f6ef03dbbf8bbbbdc7023cea28aa7ee9119c30b0cb87a39b.js?body=1" for ::1 at 2016-02-27 21:53:28 -0800
+Started GET "/assets/components/product.self-99caa87b8a52e8bc3138e99af8c5308c41e2e0c35730eac9e1c44f73ec16b112.js?body=1" for ::1 at 2016-02-27 21:53:28 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-27 21:53:28 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-02-27 21:53:28 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:53:28 -0800
+Started GET "/assets/product.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:53:28 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-02-27 21:53:28 -0800
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-27 21:53:28 -0800
+Started GET "/product" for ::1 at 2016-02-27 21:53:42 -0800
+Processing by ProductController#index as HTML
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered product/index.html.erb within layouts/application (1.1ms)
+  Rendered shared/_nav.html.erb (0.3ms)
+Completed 200 OK in 36ms (Views: 34.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-27 21:53:42 -0800
+Started GET "/assets/main.self-8977af5a05f7b71f685302e447333b72ad786f7447c8dc6b642b0b318e1b57f3.css?body=1" for ::1 at 2016-02-27 21:53:42 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-02-27 21:53:42 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-02-27 21:53:42 -0800
+Started GET "/assets/components/products.self-7280b167852f5449f6ef03dbbf8bbbbdc7023cea28aa7ee9119c30b0cb87a39b.js?body=1" for ::1 at 2016-02-27 21:53:42 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-27 21:53:42 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-02-27 21:53:42 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-02-27 21:53:42 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-27 21:53:42 -0800
+Started GET "/assets/components/product.self-99caa87b8a52e8bc3138e99af8c5308c41e2e0c35730eac9e1c44f73ec16b112.js?body=1" for ::1 at 2016-02-27 21:53:42 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:53:42 -0800
+Started GET "/assets/product.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:53:42 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-02-27 21:53:42 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-27 21:53:43 -0800
+Started GET "/product" for ::1 at 2016-02-27 21:54:29 -0800
+Processing by ProductController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered product/index.html.erb within layouts/application (7.5ms)
+  Rendered shared/_nav.html.erb (0.4ms)
+Completed 200 OK in 612ms (Views: 608.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/main.self-8977af5a05f7b71f685302e447333b72ad786f7447c8dc6b642b0b318e1b57f3.css?body=1" for ::1 at 2016-02-27 21:54:29 -0800
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-27 21:54:29 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-27 21:54:29 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-27 21:54:29 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-02-27 21:54:29 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-02-27 21:54:29 -0800
+Started GET "/assets/components/product.self-7c347fc42b365a393096f73aec53ec2f0474bacc17a1afdb569bd97162d9ceed.js?body=1" for ::1 at 2016-02-27 21:54:29 -0800
+Started GET "/assets/components/products.self-7280b167852f5449f6ef03dbbf8bbbbdc7023cea28aa7ee9119c30b0cb87a39b.js?body=1" for ::1 at 2016-02-27 21:54:29 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-27 21:54:29 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-02-27 21:54:29 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:54:29 -0800
+Started GET "/assets/product.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:54:29 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-02-27 21:54:29 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-02-27 21:54:30 -0800
+Started GET "/product" for ::1 at 2016-02-27 21:57:15 -0800
+Processing by ProductController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered product/index.html.erb within layouts/application (1.5ms)
+  Rendered shared/_nav.html.erb (0.6ms)
+Completed 200 OK in 45ms (Views: 43.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/main.self-139a11c5065d5813aeb893f305adf1593be8edbe2794c412e6cf79a0b91f0fb5.css?body=1" for ::1 at 2016-02-27 21:57:15 -0800
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-27 21:57:15 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-02-27 21:57:15 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-27 21:57:15 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-02-27 21:57:15 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-27 21:57:15 -0800
+Started GET "/assets/components/product.self-7c347fc42b365a393096f73aec53ec2f0474bacc17a1afdb569bd97162d9ceed.js?body=1" for ::1 at 2016-02-27 21:57:15 -0800
+Started GET "/assets/components/products.self-7280b167852f5449f6ef03dbbf8bbbbdc7023cea28aa7ee9119c30b0cb87a39b.js?body=1" for ::1 at 2016-02-27 21:57:15 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-02-27 21:57:15 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:57:15 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-27 21:57:15 -0800
+Started GET "/assets/product.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:57:15 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-02-27 21:57:15 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-02-27 21:57:15 -0800
+Started GET "/product" for ::1 at 2016-02-27 21:57:24 -0800
+Processing by ProductController#index as HTML
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered product/index.html.erb within layouts/application (1.8ms)
+  Rendered shared/_nav.html.erb (0.3ms)
+Completed 200 OK in 43ms (Views: 40.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/main.self-ddaa5f21b05b048535fb01db0fd7b181e2b0fa1119f4e4d573e23914daab051a.css?body=1" for ::1 at 2016-02-27 21:57:24 -0800
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-27 21:57:24 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-27 21:57:24 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-02-27 21:57:24 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-02-27 21:57:24 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-27 21:57:24 -0800
+Started GET "/assets/components/products.self-7280b167852f5449f6ef03dbbf8bbbbdc7023cea28aa7ee9119c30b0cb87a39b.js?body=1" for ::1 at 2016-02-27 21:57:24 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-27 21:57:24 -0800
+Started GET "/assets/components/product.self-7c347fc42b365a393096f73aec53ec2f0474bacc17a1afdb569bd97162d9ceed.js?body=1" for ::1 at 2016-02-27 21:57:24 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-02-27 21:57:24 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:57:24 -0800
+Started GET "/assets/product.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:57:24 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-02-27 21:57:24 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-02-27 21:57:25 -0800
+Started GET "/product" for ::1 at 2016-02-27 21:57:32 -0800
+Processing by ProductController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered product/index.html.erb within layouts/application (1.4ms)
+  Rendered shared/_nav.html.erb (0.5ms)
+Completed 200 OK in 48ms (Views: 45.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/main.self-e5685222ca757a7e9fdbcb74d984f50b172812ecb0ce5ae784403962f9341c34.css?body=1" for ::1 at 2016-02-27 21:57:32 -0800
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-27 21:57:32 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-02-27 21:57:32 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-27 21:57:32 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-27 21:57:32 -0800
+Started GET "/assets/components/product.self-7c347fc42b365a393096f73aec53ec2f0474bacc17a1afdb569bd97162d9ceed.js?body=1" for ::1 at 2016-02-27 21:57:32 -0800
+Started GET "/assets/components/products.self-7280b167852f5449f6ef03dbbf8bbbbdc7023cea28aa7ee9119c30b0cb87a39b.js?body=1" for ::1 at 2016-02-27 21:57:32 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-02-27 21:57:32 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-27 21:57:32 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-02-27 21:57:32 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:57:32 -0800
+Started GET "/assets/product.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:57:32 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-02-27 21:57:32 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-02-27 21:57:32 -0800
+Started GET "/product" for ::1 at 2016-02-27 21:57:44 -0800
+Processing by ProductController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered product/index.html.erb within layouts/application (1.4ms)
+  Rendered shared/_nav.html.erb (0.6ms)
+Completed 200 OK in 47ms (Views: 44.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/main.self-362797ca28ff3a36cff444665d67fc710bf824453c2605efd1020a41e6fb56b5.css?body=1" for ::1 at 2016-02-27 21:57:44 -0800
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-27 21:57:44 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-02-27 21:57:44 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-27 21:57:44 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-02-27 21:57:44 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-27 21:57:44 -0800
+Started GET "/assets/components/product.self-7c347fc42b365a393096f73aec53ec2f0474bacc17a1afdb569bd97162d9ceed.js?body=1" for ::1 at 2016-02-27 21:57:44 -0800
+Started GET "/assets/components/products.self-7280b167852f5449f6ef03dbbf8bbbbdc7023cea28aa7ee9119c30b0cb87a39b.js?body=1" for ::1 at 2016-02-27 21:57:44 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-27 21:57:44 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-02-27 21:57:44 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:57:44 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-02-27 21:57:44 -0800
+Started GET "/assets/product.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:57:44 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-02-27 21:57:44 -0800
+Started GET "/product" for ::1 at 2016-02-27 21:57:50 -0800
+Processing by ProductController#index as HTML
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered product/index.html.erb within layouts/application (1.5ms)
+  Rendered shared/_nav.html.erb (0.3ms)
+Completed 200 OK in 46ms (Views: 43.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/main.self-645d8e250203fe1e5c20218e4fd837e4efe3e02be5bb3179e437ece7a8dfa3cb.css?body=1" for ::1 at 2016-02-27 21:57:50 -0800
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-27 21:57:50 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-02-27 21:57:50 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-27 21:57:50 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-27 21:57:50 -0800
+Started GET "/assets/components/product.self-7c347fc42b365a393096f73aec53ec2f0474bacc17a1afdb569bd97162d9ceed.js?body=1" for ::1 at 2016-02-27 21:57:50 -0800
+Started GET "/assets/components/products.self-7280b167852f5449f6ef03dbbf8bbbbdc7023cea28aa7ee9119c30b0cb87a39b.js?body=1" for ::1 at 2016-02-27 21:57:50 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-02-27 21:57:50 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-27 21:57:50 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:57:50 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-02-27 21:57:50 -0800
+Started GET "/assets/product.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:57:50 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-02-27 21:57:50 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-02-27 21:57:50 -0800
+Started GET "/product" for ::1 at 2016-02-27 21:57:58 -0800
+Processing by ProductController#index as HTML
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered product/index.html.erb within layouts/application (1.4ms)
+  Rendered shared/_nav.html.erb (0.3ms)
+Completed 200 OK in 41ms (Views: 39.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/main.self-d26407932741f89045039c61da904e4671e43da0a836b949bbe41e21869bc64a.css?body=1" for ::1 at 2016-02-27 21:57:58 -0800
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-27 21:57:58 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-02-27 21:57:58 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-02-27 21:57:58 -0800
+Started GET "/assets/components/product.self-7c347fc42b365a393096f73aec53ec2f0474bacc17a1afdb569bd97162d9ceed.js?body=1" for ::1 at 2016-02-27 21:57:58 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-02-27 21:57:58 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-27 21:57:58 -0800
+Started GET "/assets/components/products.self-7280b167852f5449f6ef03dbbf8bbbbdc7023cea28aa7ee9119c30b0cb87a39b.js?body=1" for ::1 at 2016-02-27 21:57:58 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-27 21:57:58 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-02-27 21:57:58 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:57:58 -0800
+Started GET "/assets/product.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:57:58 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-02-27 21:57:58 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-27 21:57:58 -0800
+Started GET "/product" for ::1 at 2016-02-27 21:58:28 -0800
+Processing by ProductController#index as HTML
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered product/index.html.erb within layouts/application (1.1ms)
+  Rendered shared/_nav.html.erb (0.3ms)
+Completed 200 OK in 38ms (Views: 36.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/main.self-03176650ab255b1c8baad8efb778cc782cd7df5a59a19753c8ebaa1142fabc27.css?body=1" for ::1 at 2016-02-27 21:58:28 -0800
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-27 21:58:28 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-27 21:58:28 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-02-27 21:58:28 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-27 21:58:28 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-02-27 21:58:28 -0800
+Started GET "/assets/components/product.self-7c347fc42b365a393096f73aec53ec2f0474bacc17a1afdb569bd97162d9ceed.js?body=1" for ::1 at 2016-02-27 21:58:28 -0800
+Started GET "/assets/components/products.self-7280b167852f5449f6ef03dbbf8bbbbdc7023cea28aa7ee9119c30b0cb87a39b.js?body=1" for ::1 at 2016-02-27 21:58:29 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-27 21:58:29 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-02-27 21:58:29 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:58:29 -0800
+Started GET "/assets/product.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:58:29 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-02-27 21:58:29 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-02-27 21:58:29 -0800
+Started GET "/product" for ::1 at 2016-02-27 21:58:42 -0800
+Processing by ProductController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered product/index.html.erb within layouts/application (2.2ms)
+  Rendered shared/_nav.html.erb (0.3ms)
+Completed 200 OK in 41ms (Views: 39.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/main.self-47c7b6c7bb704ee1dcfe6ffe87094a5786b425fd1b601998d0f9f16b2e6c0447.css?body=1" for ::1 at 2016-02-27 21:58:42 -0800
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-27 21:58:42 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-02-27 21:58:42 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-02-27 21:58:42 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-02-27 21:58:42 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-27 21:58:42 -0800
+Started GET "/assets/components/product.self-7c347fc42b365a393096f73aec53ec2f0474bacc17a1afdb569bd97162d9ceed.js?body=1" for ::1 at 2016-02-27 21:58:42 -0800
+Started GET "/assets/components/products.self-7280b167852f5449f6ef03dbbf8bbbbdc7023cea28aa7ee9119c30b0cb87a39b.js?body=1" for ::1 at 2016-02-27 21:58:42 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-02-27 21:58:42 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-27 21:58:42 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:58:42 -0800
+Started GET "/assets/product.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:58:42 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-02-27 21:58:42 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-27 21:58:42 -0800
+Started GET "/product" for ::1 at 2016-02-27 21:58:50 -0800
+Processing by ProductController#index as HTML
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered product/index.html.erb within layouts/application (1.1ms)
+  Rendered shared/_nav.html.erb (0.3ms)
+Completed 200 OK in 42ms (Views: 40.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/main.self-16f83a09edf90dd40c8b630b256a756510e4da730c817680f0f5cf234504308b.css?body=1" for ::1 at 2016-02-27 21:58:50 -0800
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-27 21:58:50 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-02-27 21:58:50 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-02-27 21:58:50 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-27 21:58:50 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-27 21:58:50 -0800
+Started GET "/assets/components/product.self-7c347fc42b365a393096f73aec53ec2f0474bacc17a1afdb569bd97162d9ceed.js?body=1" for ::1 at 2016-02-27 21:58:50 -0800
+Started GET "/assets/components/products.self-7280b167852f5449f6ef03dbbf8bbbbdc7023cea28aa7ee9119c30b0cb87a39b.js?body=1" for ::1 at 2016-02-27 21:58:50 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-27 21:58:50 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-02-27 21:58:50 -0800
+Started GET "/assets/product.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:58:50 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:58:50 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-02-27 21:58:50 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-02-27 21:58:51 -0800
+Started GET "/product" for ::1 at 2016-02-27 21:58:56 -0800
+Processing by ProductController#index as HTML
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered product/index.html.erb within layouts/application (1.4ms)
+  Rendered shared/_nav.html.erb (0.4ms)
+Completed 200 OK in 43ms (Views: 40.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/main.self-ab737da2e2a0f8bf4b82636a444d0c5f13bc65339420059fb4dd0fa8942c75cf.css?body=1" for ::1 at 2016-02-27 21:58:56 -0800
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-27 21:58:56 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-02-27 21:58:56 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-02-27 21:58:56 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-02-27 21:58:56 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-27 21:58:56 -0800
+Started GET "/assets/components/product.self-7c347fc42b365a393096f73aec53ec2f0474bacc17a1afdb569bd97162d9ceed.js?body=1" for ::1 at 2016-02-27 21:58:56 -0800
+Started GET "/assets/components/products.self-7280b167852f5449f6ef03dbbf8bbbbdc7023cea28aa7ee9119c30b0cb87a39b.js?body=1" for ::1 at 2016-02-27 21:58:56 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-27 21:58:56 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-02-27 21:58:56 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:58:56 -0800
+Started GET "/assets/product.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:58:56 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-02-27 21:58:56 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-27 21:58:57 -0800
+Started GET "/product" for ::1 at 2016-02-27 21:59:04 -0800
+Processing by ProductController#index as HTML
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered product/index.html.erb within layouts/application (3.1ms)
+  Rendered shared/_nav.html.erb (0.5ms)
+Completed 200 OK in 45ms (Views: 43.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/main.self-72179733ee69c8a487d217ec23be4788fa8f5cb28fe71989b52ef7b16d5dca40.css?body=1" for ::1 at 2016-02-27 21:59:04 -0800
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-27 21:59:04 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-02-27 21:59:04 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-27 21:59:04 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-27 21:59:04 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-02-27 21:59:04 -0800
+Started GET "/assets/components/products.self-7280b167852f5449f6ef03dbbf8bbbbdc7023cea28aa7ee9119c30b0cb87a39b.js?body=1" for ::1 at 2016-02-27 21:59:04 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-27 21:59:04 -0800
+Started GET "/assets/components/product.self-7c347fc42b365a393096f73aec53ec2f0474bacc17a1afdb569bd97162d9ceed.js?body=1" for ::1 at 2016-02-27 21:59:04 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:59:04 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-02-27 21:59:04 -0800
+Started GET "/assets/product.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 21:59:04 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-02-27 21:59:04 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-02-27 21:59:04 -0800
+Started GET "/product" for ::1 at 2016-02-27 22:00:01 -0800
+Processing by ProductController#index as HTML
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered product/index.html.erb within layouts/application (1.2ms)
+  Rendered shared/_nav.html.erb (0.3ms)
+Completed 200 OK in 47ms (Views: 45.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/main.self-0ffc3c7affa148e7f804a1377f9387c0836141c81fd3ac46670161049cab8729.css?body=1" for ::1 at 2016-02-27 22:00:01 -0800
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-27 22:00:01 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-02-27 22:00:01 -0800
+Started GET "/assets/components/product.self-7c347fc42b365a393096f73aec53ec2f0474bacc17a1afdb569bd97162d9ceed.js?body=1" for ::1 at 2016-02-27 22:00:01 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-27 22:00:01 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-02-27 22:00:01 -0800
+Started GET "/assets/components/products.self-7280b167852f5449f6ef03dbbf8bbbbdc7023cea28aa7ee9119c30b0cb87a39b.js?body=1" for ::1 at 2016-02-27 22:00:01 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-27 22:00:01 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-27 22:00:01 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-02-27 22:00:01 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 22:00:01 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-02-27 22:00:01 -0800
+Started GET "/assets/product.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 22:00:01 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-02-27 22:00:01 -0800
+Started GET "/product" for ::1 at 2016-02-27 22:00:19 -0800
+Processing by ProductController#index as HTML
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered product/index.html.erb within layouts/application (1.2ms)
+  Rendered shared/_nav.html.erb (0.3ms)
+Completed 200 OK in 39ms (Views: 37.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/main.self-6f157f42043ea19f2193992a91fb840c206d87bc301632c638070f8edbee6412.css?body=1" for ::1 at 2016-02-27 22:00:19 -0800
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-27 22:00:19 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-02-27 22:00:19 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-27 22:00:19 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-02-27 22:00:19 -0800
+Started GET "/assets/components/product.self-7c347fc42b365a393096f73aec53ec2f0474bacc17a1afdb569bd97162d9ceed.js?body=1" for ::1 at 2016-02-27 22:00:19 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-27 22:00:19 -0800
+Started GET "/assets/components/products.self-7280b167852f5449f6ef03dbbf8bbbbdc7023cea28aa7ee9119c30b0cb87a39b.js?body=1" for ::1 at 2016-02-27 22:00:19 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-27 22:00:19 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 22:00:19 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-02-27 22:00:19 -0800
+Started GET "/assets/product.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 22:00:19 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-02-27 22:00:19 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-02-27 22:00:19 -0800
+Started GET "/product" for ::1 at 2016-02-27 22:00:44 -0800
+Processing by ProductController#index as HTML
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered product/index.html.erb within layouts/application (1.7ms)
+  Rendered shared/_nav.html.erb (0.3ms)
+Completed 200 OK in 40ms (Views: 36.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/main.self-4e00c53f741d45985fd497b981a002681c5c730bee361d7765dee0c7ad4973dc.css?body=1" for ::1 at 2016-02-27 22:00:44 -0800
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-27 22:00:44 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-02-27 22:00:44 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-27 22:00:44 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-27 22:00:44 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-02-27 22:00:44 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-02-27 22:00:44 -0800
+Started GET "/assets/components/products.self-7280b167852f5449f6ef03dbbf8bbbbdc7023cea28aa7ee9119c30b0cb87a39b.js?body=1" for ::1 at 2016-02-27 22:00:44 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-27 22:00:44 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-02-27 22:00:44 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 22:00:44 -0800
+Started GET "/assets/product.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 22:00:44 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-02-27 22:00:44 -0800
+Started GET "/assets/components/product.self-7c347fc42b365a393096f73aec53ec2f0474bacc17a1afdb569bd97162d9ceed.js?body=1" for ::1 at 2016-02-27 22:00:44 -0800
+Started GET "/product" for ::1 at 2016-02-27 22:01:06 -0800
+Processing by ProductController#index as HTML
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered product/index.html.erb within layouts/application (2.1ms)
+  Rendered shared/_nav.html.erb (0.5ms)
+Completed 200 OK in 44ms (Views: 42.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/main.self-770d3091408a1cf866cc934d114331fa842848c0fbb02c7a698539955c78b545.css?body=1" for ::1 at 2016-02-27 22:01:06 -0800
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-27 22:01:06 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-02-27 22:01:06 -0800
+Started GET "/assets/components/product.self-7c347fc42b365a393096f73aec53ec2f0474bacc17a1afdb569bd97162d9ceed.js?body=1" for ::1 at 2016-02-27 22:01:06 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-27 22:01:06 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-02-27 22:01:06 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-27 22:01:06 -0800
+Started GET "/assets/components/products.self-7280b167852f5449f6ef03dbbf8bbbbdc7023cea28aa7ee9119c30b0cb87a39b.js?body=1" for ::1 at 2016-02-27 22:01:06 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-02-27 22:01:06 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-27 22:01:06 -0800
+Started GET "/assets/product.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 22:01:06 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 22:01:06 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-02-27 22:01:06 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-02-27 22:01:06 -0800
+Started GET "/product" for ::1 at 2016-02-27 22:01:21 -0800
+Processing by ProductController#index as HTML
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered product/index.html.erb within layouts/application (1.3ms)
+  Rendered shared/_nav.html.erb (0.3ms)
+Completed 200 OK in 31ms (Views: 29.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/main.self-4e00c53f741d45985fd497b981a002681c5c730bee361d7765dee0c7ad4973dc.css?body=1" for ::1 at 2016-02-27 22:01:21 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-02-27 22:01:21 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-02-27 22:01:21 -0800
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-27 22:01:21 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-27 22:01:21 -0800
+Started GET "/assets/components/product.self-7c347fc42b365a393096f73aec53ec2f0474bacc17a1afdb569bd97162d9ceed.js?body=1" for ::1 at 2016-02-27 22:01:21 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-02-27 22:01:21 -0800
+Started GET "/assets/components/products.self-7280b167852f5449f6ef03dbbf8bbbbdc7023cea28aa7ee9119c30b0cb87a39b.js?body=1" for ::1 at 2016-02-27 22:01:21 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-27 22:01:21 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 22:01:21 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-02-27 22:01:21 -0800
+Started GET "/assets/product.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 22:01:21 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-02-27 22:01:21 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-27 22:01:21 -0800
+Started GET "/product" for ::1 at 2016-02-27 22:02:05 -0800
+Processing by ProductController#index as HTML
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered product/index.html.erb within layouts/application (1.2ms)
+  Rendered shared/_nav.html.erb (0.4ms)
+Completed 200 OK in 39ms (Views: 37.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/main.self-f26627066099b1da406c00f3ed7ac69a5dbe26998dffe12dcb7a419d5ebd68d9.css?body=1" for ::1 at 2016-02-27 22:02:05 -0800
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-27 22:02:05 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-02-27 22:02:05 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-02-27 22:02:05 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-27 22:02:05 -0800
+Started GET "/assets/components/product.self-7c347fc42b365a393096f73aec53ec2f0474bacc17a1afdb569bd97162d9ceed.js?body=1" for ::1 at 2016-02-27 22:02:05 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-27 22:02:05 -0800
+Started GET "/assets/components/products.self-7280b167852f5449f6ef03dbbf8bbbbdc7023cea28aa7ee9119c30b0cb87a39b.js?body=1" for ::1 at 2016-02-27 22:02:05 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-27 22:02:05 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-02-27 22:02:05 -0800
+Started GET "/assets/product.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 22:02:05 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-02-27 22:02:05 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-27 22:02:05 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-02-27 22:02:05 -0800

@@ -38,6 +38,7 @@ product
  - price
  - skew-# 
  - #instock
+ - photo-URL
 
 cart 
  - has products
