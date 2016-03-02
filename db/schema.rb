@@ -28,10 +28,10 @@ ActiveRecord::Schema.define(version: 20160229012230) do
     t.string   "first_name"
     t.string   "last_name"
     t.string   "email"
-    t.string   "password"
-    t.string   "account_type", default: "admin_user"
-    t.datetime "created_at",                          null: false
-    t.datetime "updated_at",                          null: false
+    t.string   "password_digest"
+    t.string   "account_type",    default: "admin_user"
+    t.datetime "created_at",                             null: false
+    t.datetime "updated_at",                             null: false
   end
 
 end

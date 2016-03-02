@@ -5,7 +5,7 @@ var Products = React.createClass({
 
   render: function() {
     return (
-      <div className="container">
+      <div className="container-fluid">
         {this.state.products.map(function(product) {
           return <Product key={product.id} product={product} />
         })}

@@ -1,4 +1,12 @@
 <div class="container-fluid navigation-outer">
   
+  <% if current_user %>
+    Hi <%= current_user.first_name %>
+    <%= link_to "Log Out", logout_path, method: :delete %>
+  <% else %>
+    Please <%= link_to "Login", login_path %>
+    
+  <% end %>
+
   
 </div>
