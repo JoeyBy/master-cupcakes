@@ -8,7 +8,7 @@ var Product = React.createClass({
           <h2 className="product-title" >{this.props.product.name}</h2>
           <p className="product-description">{this.props.product.description}</p>
           <p className="product-price">{this.props.product.price}</p>
-          <p className="button add-to-cart">ADD TO CART</p>
+          <a href={"/product/"+ this.props.product.id }><p className="button add-to-cart">Learn More</p></a>
         </div>
       </div>
     );

@@ -1,0 +1,43 @@
+<main>
+<br>
+<%= form_for @product, :html => {:multipart => true} do |f| %>
+  <% if @product.errors.any? %>
+    <div>
+      <%= pluralize(@product.errors.count, "error") %> prevented this product from being submitted.
+        <ul>
+          <%= @product.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+          <% end %>
+        </ul>
+    </div>
+  <% end %>
+  <div>
+    <%= f.label "Name" %>
+    <%= f.text_field "name" %>
+  </div>
+  <div>
+    <%= f.label "Description" %>
+    <%= f.text_field "description" %>
+  </div>
+  <div>
+    <%= f.label "Price" %>
+    <%= f.text_field "price" %>
+  </div>
+  <div>
+    <%= f.label "Number of units in stock" %>
+    <%= f.text_field "in_stock" %>
+  </div>
+  <div>
+    <%= f.label "Skew" %>
+    <%= f.text_field "skew" %>
+  </div>
+  <div>
+    <%= f.label "Photo Url" %>
+    <%= f.text_field "photo_url" %>
+  </div>
+  <div>
+    <%= f.submit "Submit"  %>
+  </div>
+<% end %>
+
+</main>
