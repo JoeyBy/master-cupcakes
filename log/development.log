@@ -9005,3 +9005,1624 @@ Processing by ProductController#show as HTML
 Completed 200 OK in 44ms (Views: 41.6ms | ActiveRecord: 0.4ms)
 
 
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ProductController> at /Users/Joey/Documents/rails-react/app/controllers/product_controller.rb:3)
+Started GET "/product" for ::1 at 2016-03-02 21:11:37 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProductController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered product/index.html.erb within layouts/application (16.6ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered shared/_nav.html.erb (15.6ms)
+Completed 200 OK in 515ms (Views: 504.6ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/admin.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:11:38 -0800
+Started GET "/assets/logins.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:11:38 -0800
+Started GET "/assets/main.self-556d183fd770f0078e8a3c83925fc6ffc55771d781fc4c94d0317851c6b8b8b3.css?body=1" for ::1 at 2016-03-02 21:11:38 -0800
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:11:38 -0800
+Started GET "/assets/session.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:11:38 -0800
+Started GET "/assets/user.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:11:38 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-03-02 21:11:38 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-02 21:11:38 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-03-02 21:11:38 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-03-02 21:11:38 -0800
+Started GET "/assets/components/product.self-05c801ef1b5fcb6fc29f36d34ef96fa83d2284c8bebd26a43565eefce8741171.js?body=1" for ::1 at 2016-03-02 21:11:38 -0800
+Started GET "/assets/components/products.self-99eb8b03be2964bcfc90710378562bac25d6a98eb58ae3f849049596244bf08c.js?body=1" for ::1 at 2016-03-02 21:11:38 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-03-02 21:11:38 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-03-02 21:11:38 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:11:38 -0800
+Started GET "/assets/user.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:11:38 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-03-02 21:11:38 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-02 21:11:38 -0800
+Started GET "/product/2" for ::1 at 2016-03-02 21:11:41 -0800
+Processing by ProductController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered product/show.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered shared/_nav.html.erb (1.3ms)
+Completed 200 OK in 29ms (Views: 26.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/product/2" for ::1 at 2016-03-02 21:12:14 -0800
+Processing by ProductController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered product/show.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered shared/_nav.html.erb (1.8ms)
+Completed 200 OK in 66ms (Views: 63.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/admin.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:12:14 -0800
+Started GET "/assets/main.self-556d183fd770f0078e8a3c83925fc6ffc55771d781fc4c94d0317851c6b8b8b3.css?body=1" for ::1 at 2016-03-02 21:12:14 -0800
+Started GET "/assets/logins.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:12:14 -0800
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:12:14 -0800
+Started GET "/assets/session.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:12:14 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-02 21:12:14 -0800
+Started GET "/assets/user.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:12:14 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-02 21:12:14 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-03-02 21:12:14 -0800
+Started GET "/assets/components/product.self-05c801ef1b5fcb6fc29f36d34ef96fa83d2284c8bebd26a43565eefce8741171.js?body=1" for ::1 at 2016-03-02 21:12:14 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-03-02 21:12:14 -0800
+Started GET "/assets/components/products.self-99eb8b03be2964bcfc90710378562bac25d6a98eb58ae3f849049596244bf08c.js?body=1" for ::1 at 2016-03-02 21:12:14 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-03-02 21:12:14 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:12:15 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-03-02 21:12:15 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-03-02 21:12:15 -0800
+Started GET "/assets/user.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:12:15 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-03-02 21:12:15 -0800
+Started GET "/product/2" for ::1 at 2016-03-02 21:12:23 -0800
+Processing by ProductController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered product/show.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered shared/_nav.html.erb (3.1ms)
+Completed 200 OK in 56ms (Views: 53.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/logins.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:12:23 -0800
+Started GET "/assets/main.self-556d183fd770f0078e8a3c83925fc6ffc55771d781fc4c94d0317851c6b8b8b3.css?body=1" for ::1 at 2016-03-02 21:12:23 -0800
+Started GET "/assets/admin.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:12:23 -0800
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:12:23 -0800
+Started GET "/assets/session.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:12:23 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-03-02 21:12:23 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-02 21:12:23 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-03-02 21:12:23 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-02 21:12:23 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-03-02 21:12:23 -0800
+Started GET "/assets/components/product.self-05c801ef1b5fcb6fc29f36d34ef96fa83d2284c8bebd26a43565eefce8741171.js?body=1" for ::1 at 2016-03-02 21:12:23 -0800
+Started GET "/assets/components/products.self-99eb8b03be2964bcfc90710378562bac25d6a98eb58ae3f849049596244bf08c.js?body=1" for ::1 at 2016-03-02 21:12:23 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-03-02 21:12:23 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:12:23 -0800
+Started GET "/assets/user.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:12:23 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-03-02 21:12:23 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-03-02 21:12:23 -0800
+Started GET "/assets/user.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:12:23 -0800
+Started GET "/product/2" for ::1 at 2016-03-02 21:13:50 -0800
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ProductController> at /Users/Joey/Documents/rails-react/app/controllers/product_controller.rb:3)
+Processing by ProductController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered product/show.html.erb within layouts/application (1.6ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered shared/_nav.html.erb (12.8ms)
+Completed 200 OK in 1266ms (Views: 1246.9ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/admin.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:13:51 -0800
+Started GET "/assets/logins.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:13:51 -0800
+Started GET "/assets/main.self-556d183fd770f0078e8a3c83925fc6ffc55771d781fc4c94d0317851c6b8b8b3.css?body=1" for ::1 at 2016-03-02 21:13:52 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-03-02 21:13:52 -0800
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:13:52 -0800
+Started GET "/assets/session.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:13:52 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-02 21:13:52 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-03-02 21:13:52 -0800
+Started GET "/assets/components/products.self-99eb8b03be2964bcfc90710378562bac25d6a98eb58ae3f849049596244bf08c.js?body=1" for ::1 at 2016-03-02 21:13:52 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-03-02 21:13:52 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-03-02 21:13:52 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-03-02 21:13:52 -0800
+Started GET "/assets/user.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:13:52 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:13:52 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-02 21:13:52 -0800
+Started GET "/assets/components/product.self-bc2228dbe4fd1a54f4abf72ecfb9c08a6c8f60b04420c74fba5bef5fe158bb92.js?body=1" for ::1 at 2016-03-02 21:13:52 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-03-02 21:13:52 -0800
+Started GET "/assets/user.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:13:52 -0800
+Started GET "/product/2" for ::1 at 2016-03-02 21:15:54 -0800
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ProductController> at /Users/Joey/Documents/rails-react/app/controllers/product_controller.rb:3)
+Processing by ProductController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered product/show.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered shared/_nav.html.erb (12.5ms)
+Completed 200 OK in 703ms (Views: 691.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:15:55 -0800
+Started GET "/assets/admin.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:15:55 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-03-02 21:15:55 -0800
+Started GET "/assets/logins.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:15:55 -0800
+Started GET "/assets/main.self-556d183fd770f0078e8a3c83925fc6ffc55771d781fc4c94d0317851c6b8b8b3.css?body=1" for ::1 at 2016-03-02 21:15:55 -0800
+Started GET "/assets/session.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:15:55 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-02 21:15:55 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-02 21:15:55 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-03-02 21:15:55 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-03-02 21:15:55 -0800
+Started GET "/assets/components/products.self-99eb8b03be2964bcfc90710378562bac25d6a98eb58ae3f849049596244bf08c.js?body=1" for ::1 at 2016-03-02 21:15:55 -0800
+Started GET "/assets/components/product.self-05c801ef1b5fcb6fc29f36d34ef96fa83d2284c8bebd26a43565eefce8741171.js?body=1" for ::1 at 2016-03-02 21:15:55 -0800
+Started GET "/assets/components/showProduct.self-4f516454be5a2e5d42a9ee22b4f96892029d1c3bb1e5b76ead67c1d70b520529.js?body=1" for ::1 at 2016-03-02 21:15:55 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-03-02 21:15:55 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-03-02 21:15:55 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:15:55 -0800
+Started GET "/assets/user.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:15:55 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-03-02 21:15:55 -0800
+Started GET "/assets/user.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:15:56 -0800
+Started GET "/product/2" for ::1 at 2016-03-02 21:16:06 -0800
+Processing by ProductController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered product/show.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered shared/_nav.html.erb (2.5ms)
+Completed 200 OK in 37ms (Views: 34.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/admin.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:16:06 -0800
+Started GET "/assets/logins.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:16:06 -0800
+Started GET "/assets/main.self-556d183fd770f0078e8a3c83925fc6ffc55771d781fc4c94d0317851c6b8b8b3.css?body=1" for ::1 at 2016-03-02 21:16:06 -0800
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:16:06 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-03-02 21:16:06 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-02 21:16:06 -0800
+Started GET "/assets/user.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:16:06 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-02 21:16:06 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-03-02 21:16:06 -0800
+Started GET "/assets/components/products.self-99eb8b03be2964bcfc90710378562bac25d6a98eb58ae3f849049596244bf08c.js?body=1" for ::1 at 2016-03-02 21:16:06 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-03-02 21:16:06 -0800
+Started GET "/assets/components/product.self-05c801ef1b5fcb6fc29f36d34ef96fa83d2284c8bebd26a43565eefce8741171.js?body=1" for ::1 at 2016-03-02 21:16:06 -0800
+Started GET "/assets/components/showProduct.self-4f516454be5a2e5d42a9ee22b4f96892029d1c3bb1e5b76ead67c1d70b520529.js?body=1" for ::1 at 2016-03-02 21:16:06 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-03-02 21:16:06 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-03-02 21:16:06 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:16:06 -0800
+Started GET "/assets/user.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:16:06 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-03-02 21:16:06 -0800
+Started GET "/assets/session.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:16:06 -0800
+Started GET "/product/2" for ::1 at 2016-03-02 21:16:51 -0800
+Processing by ProductController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered product/show.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered shared/_nav.html.erb (2.2ms)
+Completed 200 OK in 698ms (Views: 695.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/admin.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:16:51 -0800
+Started GET "/assets/session.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:16:51 -0800
+Started GET "/assets/user.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:16:51 -0800
+Started GET "/assets/logins.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:16:51 -0800
+Started GET "/assets/main.self-556d183fd770f0078e8a3c83925fc6ffc55771d781fc4c94d0317851c6b8b8b3.css?body=1" for ::1 at 2016-03-02 21:16:51 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-03-02 21:16:51 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-02 21:16:51 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-03-02 21:16:51 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-02 21:16:51 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-03-02 21:16:51 -0800
+Started GET "/assets/components/product.self-05c801ef1b5fcb6fc29f36d34ef96fa83d2284c8bebd26a43565eefce8741171.js?body=1" for ::1 at 2016-03-02 21:16:51 -0800
+Started GET "/assets/components/products.self-99eb8b03be2964bcfc90710378562bac25d6a98eb58ae3f849049596244bf08c.js?body=1" for ::1 at 2016-03-02 21:16:51 -0800
+Started GET "/assets/components/showProduct.self-531ffe233f08aa9aaec5035a7df20d367f383b9f70307b138b8badf346bf4830.js?body=1" for ::1 at 2016-03-02 21:16:51 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-03-02 21:16:52 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-03-02 21:16:52 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:16:52 -0800
+Started GET "/assets/user.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:16:52 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-03-02 21:16:52 -0800
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:16:52 -0800
+Started GET "/product/2" for ::1 at 2016-03-02 21:17:16 -0800
+Processing by ProductController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered product/show.html.erb within layouts/application (0.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered shared/_nav.html.erb (1.9ms)
+Completed 200 OK in 682ms (Views: 678.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/admin.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:17:17 -0800
+Started GET "/assets/logins.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:17:17 -0800
+Started GET "/assets/main.self-556d183fd770f0078e8a3c83925fc6ffc55771d781fc4c94d0317851c6b8b8b3.css?body=1" for ::1 at 2016-03-02 21:17:17 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-03-02 21:17:17 -0800
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:17:17 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-03-02 21:17:17 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-02 21:17:17 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-03-02 21:17:17 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-02 21:17:17 -0800
+Started GET "/assets/session.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:17:17 -0800
+Started GET "/assets/components/product.self-05c801ef1b5fcb6fc29f36d34ef96fa83d2284c8bebd26a43565eefce8741171.js?body=1" for ::1 at 2016-03-02 21:17:17 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-03-02 21:17:17 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:17:17 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-03-02 21:17:17 -0800
+Started GET "/assets/user.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:17:17 -0800
+Started GET "/assets/components/showProduct.self-d6d4632b90f7c020c0e2042a795411362dc40948e1c1c2d639a933d8c1ef4bff.js?body=1" for ::1 at 2016-03-02 21:17:17 -0800
+Started GET "/assets/components/products.self-99eb8b03be2964bcfc90710378562bac25d6a98eb58ae3f849049596244bf08c.js?body=1" for ::1 at 2016-03-02 21:17:17 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-03-02 21:17:17 -0800
+Started GET "/assets/user.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:17:17 -0800
+Started GET "/product/2" for ::1 at 2016-03-02 21:21:37 -0800
+Processing by ProductController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered product/show.html.erb within layouts/application (0.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered shared/_nav.html.erb (2.4ms)
+Completed 200 OK in 706ms (Views: 703.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/admin.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:21:38 -0800
+Started GET "/assets/logins.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:21:38 -0800
+Started GET "/assets/main.self-556d183fd770f0078e8a3c83925fc6ffc55771d781fc4c94d0317851c6b8b8b3.css?body=1" for ::1 at 2016-03-02 21:21:38 -0800
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:21:38 -0800
+Started GET "/assets/session.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:21:38 -0800
+Started GET "/assets/user.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:21:38 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-02 21:21:38 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-03-02 21:21:38 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-03-02 21:21:38 -0800
+Started GET "/assets/components/product.self-05c801ef1b5fcb6fc29f36d34ef96fa83d2284c8bebd26a43565eefce8741171.js?body=1" for ::1 at 2016-03-02 21:21:38 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-03-02 21:21:38 -0800
+Started GET "/assets/components/products.self-99eb8b03be2964bcfc90710378562bac25d6a98eb58ae3f849049596244bf08c.js?body=1" for ::1 at 2016-03-02 21:21:38 -0800
+Started GET "/assets/components/showProduct.self-c0d8ea048b63784e1e7919edee9b08543c8fadbc1b67156f75a1aadbdfa7417d.js?body=1" for ::1 at 2016-03-02 21:21:38 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-03-02 21:21:38 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-03-02 21:21:38 -0800
+Started GET "/assets/user.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:21:38 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:21:38 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-03-02 21:21:38 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-02 21:21:38 -0800
+Started GET "/product/2" for ::1 at 2016-03-02 21:22:04 -0800
+Processing by ProductController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered product/show.html.erb within layouts/application (1.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered shared/_nav.html.erb (2.1ms)
+Completed 200 OK in 710ms (Views: 707.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/admin.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:22:05 -0800
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:22:05 -0800
+Started GET "/assets/logins.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:22:05 -0800
+Started GET "/assets/main.self-556d183fd770f0078e8a3c83925fc6ffc55771d781fc4c94d0317851c6b8b8b3.css?body=1" for ::1 at 2016-03-02 21:22:05 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-03-02 21:22:05 -0800
+Started GET "/assets/session.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:22:05 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-02 21:22:05 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-03-02 21:22:05 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-02 21:22:05 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-03-02 21:22:05 -0800
+Started GET "/assets/components/product.self-05c801ef1b5fcb6fc29f36d34ef96fa83d2284c8bebd26a43565eefce8741171.js?body=1" for ::1 at 2016-03-02 21:22:05 -0800
+Started GET "/assets/components/products.self-99eb8b03be2964bcfc90710378562bac25d6a98eb58ae3f849049596244bf08c.js?body=1" for ::1 at 2016-03-02 21:22:05 -0800
+Started GET "/assets/components/showProduct.self-65dc30e677c422aa1347746bcdfcea3ed434b1feba5fc36eeca29337a7a0a577.js?body=1" for ::1 at 2016-03-02 21:22:05 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-03-02 21:22:05 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-03-02 21:22:05 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:22:05 -0800
+Started GET "/assets/user.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:22:05 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-03-02 21:22:05 -0800
+Started GET "/assets/user.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:22:05 -0800
+Started GET "/product/2" for ::1 at 2016-03-02 21:22:30 -0800
+Processing by ProductController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered product/show.html.erb within layouts/application (1.3ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered shared/_nav.html.erb (2.0ms)
+Completed 200 OK in 696ms (Views: 693.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/admin.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:22:31 -0800
+Started GET "/assets/main.self-556d183fd770f0078e8a3c83925fc6ffc55771d781fc4c94d0317851c6b8b8b3.css?body=1" for ::1 at 2016-03-02 21:22:31 -0800
+Started GET "/assets/logins.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:22:31 -0800
+Started GET "/assets/session.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:22:31 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-03-02 21:22:31 -0800
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:22:31 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-02 21:22:31 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-02 21:22:31 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-03-02 21:22:31 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-03-02 21:22:31 -0800
+Started GET "/assets/components/product.self-05c801ef1b5fcb6fc29f36d34ef96fa83d2284c8bebd26a43565eefce8741171.js?body=1" for ::1 at 2016-03-02 21:22:31 -0800
+Started GET "/assets/components/products.self-99eb8b03be2964bcfc90710378562bac25d6a98eb58ae3f849049596244bf08c.js?body=1" for ::1 at 2016-03-02 21:22:31 -0800
+Started GET "/assets/components/showProduct.self-585132c0d6fe58063808d71cbc97ac4cd0590ffc2a54c66e15257a366ec52af9.js?body=1" for ::1 at 2016-03-02 21:22:31 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-03-02 21:22:31 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-03-02 21:22:31 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:22:31 -0800
+Started GET "/assets/user.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:22:31 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-03-02 21:22:31 -0800
+Started GET "/assets/user.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:22:31 -0800
+Started GET "/product/2" for ::1 at 2016-03-02 21:22:54 -0800
+Processing by ProductController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered product/show.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered shared/_nav.html.erb (1.7ms)
+Completed 200 OK in 685ms (Views: 683.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/admin.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:22:55 -0800
+Started GET "/assets/logins.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:22:55 -0800
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:22:55 -0800
+Started GET "/assets/main.self-556d183fd770f0078e8a3c83925fc6ffc55771d781fc4c94d0317851c6b8b8b3.css?body=1" for ::1 at 2016-03-02 21:22:55 -0800
+Started GET "/assets/session.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:22:55 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-03-02 21:22:55 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-02 21:22:55 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-03-02 21:22:55 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-03-02 21:22:55 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-02 21:22:55 -0800
+Started GET "/assets/components/product.self-05c801ef1b5fcb6fc29f36d34ef96fa83d2284c8bebd26a43565eefce8741171.js?body=1" for ::1 at 2016-03-02 21:22:55 -0800
+Started GET "/assets/components/products.self-99eb8b03be2964bcfc90710378562bac25d6a98eb58ae3f849049596244bf08c.js?body=1" for ::1 at 2016-03-02 21:22:55 -0800
+Started GET "/assets/components/showProduct.self-e82913ad81ec12a32c7f51a9bda41c1f43b4fd45777d002654c44b503559439c.js?body=1" for ::1 at 2016-03-02 21:22:55 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-03-02 21:22:55 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-03-02 21:22:55 -0800
+Started GET "/assets/user.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:22:55 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:22:55 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-03-02 21:22:55 -0800
+Started GET "/assets/user.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:22:55 -0800
+Started GET "/product/2" for ::1 at 2016-03-02 21:23:16 -0800
+Processing by ProductController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered product/show.html.erb within layouts/application (0.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered shared/_nav.html.erb (2.1ms)
+Completed 200 OK in 722ms (Views: 719.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/admin.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:23:17 -0800
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:23:17 -0800
+Started GET "/assets/main.self-556d183fd770f0078e8a3c83925fc6ffc55771d781fc4c94d0317851c6b8b8b3.css?body=1" for ::1 at 2016-03-02 21:23:17 -0800
+Started GET "/assets/logins.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:23:17 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-03-02 21:23:17 -0800
+Started GET "/assets/session.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:23:17 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-02 21:23:17 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-02 21:23:17 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-03-02 21:23:17 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-03-02 21:23:17 -0800
+Started GET "/assets/components/product.self-05c801ef1b5fcb6fc29f36d34ef96fa83d2284c8bebd26a43565eefce8741171.js?body=1" for ::1 at 2016-03-02 21:23:17 -0800
+Started GET "/assets/components/showProduct.self-1d0837507ede176be53addd78bc56c6313e44b22def8bef0541f7d06f1c0fe47.js?body=1" for ::1 at 2016-03-02 21:23:17 -0800
+Started GET "/assets/components/products.self-99eb8b03be2964bcfc90710378562bac25d6a98eb58ae3f849049596244bf08c.js?body=1" for ::1 at 2016-03-02 21:23:17 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:23:17 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-03-02 21:23:17 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-03-02 21:23:17 -0800
+Started GET "/assets/user.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:23:17 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-03-02 21:23:17 -0800
+Started GET "/assets/user.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:23:17 -0800
+Started GET "/product/2" for ::1 at 2016-03-02 21:23:36 -0800
+Processing by ProductController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered product/show.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered shared/_nav.html.erb (1.9ms)
+Completed 200 OK in 704ms (Views: 701.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/admin.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:23:37 -0800
+Started GET "/assets/logins.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:23:37 -0800
+Started GET "/assets/user.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:23:37 -0800
+Started GET "/assets/session.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:23:37 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-03-02 21:23:37 -0800
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:23:37 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-02 21:23:37 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-02 21:23:37 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-03-02 21:23:37 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-03-02 21:23:37 -0800
+Started GET "/assets/components/product.self-05c801ef1b5fcb6fc29f36d34ef96fa83d2284c8bebd26a43565eefce8741171.js?body=1" for ::1 at 2016-03-02 21:23:37 -0800
+Started GET "/assets/components/showProduct.self-ce3b185846bf794a61148bc2aa1382733fcd333084e4c0c15051000c876a8356.js?body=1" for ::1 at 2016-03-02 21:23:37 -0800
+Started GET "/assets/components/products.self-99eb8b03be2964bcfc90710378562bac25d6a98eb58ae3f849049596244bf08c.js?body=1" for ::1 at 2016-03-02 21:23:37 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-03-02 21:23:37 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-03-02 21:23:37 -0800
+Started GET "/assets/user.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:23:37 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:23:37 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-03-02 21:23:37 -0800
+Started GET "/assets/main.self-556d183fd770f0078e8a3c83925fc6ffc55771d781fc4c94d0317851c6b8b8b3.css?body=1" for ::1 at 2016-03-02 21:23:37 -0800
+Started GET "/product/2" for ::1 at 2016-03-02 21:23:55 -0800
+Processing by ProductController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered product/show.html.erb within layouts/application (1.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered shared/_nav.html.erb (2.5ms)
+Completed 200 OK in 711ms (Views: 708.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/admin.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:23:56 -0800
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:23:56 -0800
+Started GET "/assets/logins.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:23:56 -0800
+Started GET "/assets/main.self-556d183fd770f0078e8a3c83925fc6ffc55771d781fc4c94d0317851c6b8b8b3.css?body=1" for ::1 at 2016-03-02 21:23:56 -0800
+Started GET "/assets/session.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:23:56 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-03-02 21:23:56 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-02 21:23:56 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-02 21:23:56 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-03-02 21:23:56 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-03-02 21:23:56 -0800
+Started GET "/assets/components/product.self-05c801ef1b5fcb6fc29f36d34ef96fa83d2284c8bebd26a43565eefce8741171.js?body=1" for ::1 at 2016-03-02 21:23:56 -0800
+Started GET "/assets/components/showProduct.self-01c3ac21024a21314008aa5db9515f8a17dddf5aa91430c0708eb6f2308658d2.js?body=1" for ::1 at 2016-03-02 21:23:56 -0800
+Started GET "/assets/components/products.self-99eb8b03be2964bcfc90710378562bac25d6a98eb58ae3f849049596244bf08c.js?body=1" for ::1 at 2016-03-02 21:23:56 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-03-02 21:23:56 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-03-02 21:23:56 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:23:56 -0800
+Started GET "/assets/user.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:23:56 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-03-02 21:23:56 -0800
+Started GET "/assets/user.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:23:56 -0800
+Started GET "/product/2" for ::1 at 2016-03-02 21:24:38 -0800
+Processing by ProductController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered product/show.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered shared/_nav.html.erb (2.4ms)
+Completed 200 OK in 803ms (Views: 797.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/admin.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:24:38 -0800
+Started GET "/assets/logins.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:24:38 -0800
+Started GET "/assets/main.self-0b6713181507fb9287320b57d2532f6d0fb43eeb45ef27be32148117d9726d75.css?body=1" for ::1 at 2016-03-02 21:24:38 -0800
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:24:38 -0800
+Started GET "/assets/session.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:24:38 -0800
+Started GET "/assets/user.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:24:38 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-02 21:24:38 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-03-02 21:24:38 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-03-02 21:24:38 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-03-02 21:24:38 -0800
+Started GET "/assets/components/product.self-05c801ef1b5fcb6fc29f36d34ef96fa83d2284c8bebd26a43565eefce8741171.js?body=1" for ::1 at 2016-03-02 21:24:38 -0800
+Started GET "/assets/components/products.self-99eb8b03be2964bcfc90710378562bac25d6a98eb58ae3f849049596244bf08c.js?body=1" for ::1 at 2016-03-02 21:24:38 -0800
+Started GET "/assets/components/showProduct.self-063c873e1cea34566c489cf7fa2ef74faff929544d364e74932e4c1948dc73e9.js?body=1" for ::1 at 2016-03-02 21:24:38 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-03-02 21:24:38 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:24:38 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-03-02 21:24:38 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-03-02 21:24:38 -0800
+Started GET "/assets/user.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:24:38 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-02 21:24:39 -0800
+Started GET "/product/2" for ::1 at 2016-03-02 21:26:05 -0800
+Processing by ProductController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered product/show.html.erb within layouts/application (0.7ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered shared/_nav.html.erb (2.2ms)
+Completed 200 OK in 688ms (Views: 685.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/admin.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:26:06 -0800
+Started GET "/assets/logins.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:26:06 -0800
+Started GET "/assets/session.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:26:06 -0800
+Started GET "/assets/main.self-0b6713181507fb9287320b57d2532f6d0fb43eeb45ef27be32148117d9726d75.css?body=1" for ::1 at 2016-03-02 21:26:06 -0800
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:26:06 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-03-02 21:26:06 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-02 21:26:06 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-02 21:26:06 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-03-02 21:26:06 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-03-02 21:26:06 -0800
+Started GET "/assets/components/oneProduct.self-041850ec7bd4b2e3335fec579bb9d47af02233941910bcff6a155ab78533ffa9.js?body=1" for ::1 at 2016-03-02 21:26:06 -0800
+Started GET "/assets/components/product.self-05c801ef1b5fcb6fc29f36d34ef96fa83d2284c8bebd26a43565eefce8741171.js?body=1" for ::1 at 2016-03-02 21:26:06 -0800
+Started GET "/assets/components/products.self-99eb8b03be2964bcfc90710378562bac25d6a98eb58ae3f849049596244bf08c.js?body=1" for ::1 at 2016-03-02 21:26:06 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-03-02 21:26:06 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-03-02 21:26:06 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:26:06 -0800
+Started GET "/assets/user.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:26:06 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-03-02 21:26:06 -0800
+Started GET "/assets/user.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:26:06 -0800
+Started GET "/product/2" for ::1 at 2016-03-02 21:26:25 -0800
+Processing by ProductController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered product/show.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered shared/_nav.html.erb (2.2ms)
+Completed 200 OK in 713ms (Views: 708.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/admin.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:26:25 -0800
+Started GET "/assets/main.self-0b6713181507fb9287320b57d2532f6d0fb43eeb45ef27be32148117d9726d75.css?body=1" for ::1 at 2016-03-02 21:26:25 -0800
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:26:26 -0800
+Started GET "/assets/logins.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:26:26 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-03-02 21:26:26 -0800
+Started GET "/assets/user.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:26:26 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-02 21:26:26 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-02 21:26:26 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-03-02 21:26:26 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-03-02 21:26:26 -0800
+Started GET "/assets/components/oneProduct.self-1bf2b9190eaf5895710f3fecc20729038ee01cd2814a0b33e18f35631ed2eec4.js?body=1" for ::1 at 2016-03-02 21:26:26 -0800
+Started GET "/assets/components/product.self-05c801ef1b5fcb6fc29f36d34ef96fa83d2284c8bebd26a43565eefce8741171.js?body=1" for ::1 at 2016-03-02 21:26:26 -0800
+Started GET "/assets/components/products.self-99eb8b03be2964bcfc90710378562bac25d6a98eb58ae3f849049596244bf08c.js?body=1" for ::1 at 2016-03-02 21:26:26 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-03-02 21:26:26 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-03-02 21:26:26 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:26:26 -0800
+Started GET "/assets/user.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:26:26 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-03-02 21:26:26 -0800
+Started GET "/assets/session.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:26:26 -0800
+Started GET "/product/2" for ::1 at 2016-03-02 21:26:36 -0800
+Processing by ProductController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered product/show.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered shared/_nav.html.erb (2.2ms)
+Completed 200 OK in 694ms (Views: 690.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/admin.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:26:36 -0800
+Started GET "/assets/user.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:26:36 -0800
+Started GET "/assets/session.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:26:36 -0800
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:26:36 -0800
+Started GET "/assets/logins.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:26:36 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-03-02 21:26:36 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-02 21:26:36 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-02 21:26:36 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-03-02 21:26:36 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-03-02 21:26:36 -0800
+Started GET "/assets/components/oneProduct.self-ca13ef72261ade9160c2d8bd2dbd811ce6c0cf8dc86cddf509e73f17c11cd520.js?body=1" for ::1 at 2016-03-02 21:26:36 -0800
+Started GET "/assets/components/products.self-99eb8b03be2964bcfc90710378562bac25d6a98eb58ae3f849049596244bf08c.js?body=1" for ::1 at 2016-03-02 21:26:36 -0800
+Started GET "/assets/components/product.self-05c801ef1b5fcb6fc29f36d34ef96fa83d2284c8bebd26a43565eefce8741171.js?body=1" for ::1 at 2016-03-02 21:26:36 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-03-02 21:26:36 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-03-02 21:26:36 -0800
+Started GET "/assets/user.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:26:36 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:26:36 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-03-02 21:26:36 -0800
+Started GET "/assets/main.self-0b6713181507fb9287320b57d2532f6d0fb43eeb45ef27be32148117d9726d75.css?body=1" for ::1 at 2016-03-02 21:26:37 -0800
+Started GET "/product/2" for ::1 at 2016-03-02 21:27:02 -0800
+Processing by ProductController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered product/show.html.erb within layouts/application (1.2ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered shared/_nav.html.erb (1.8ms)
+Completed 200 OK in 708ms (Views: 704.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/admin.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:27:03 -0800
+Started GET "/assets/logins.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:27:03 -0800
+Started GET "/assets/main.self-0b6713181507fb9287320b57d2532f6d0fb43eeb45ef27be32148117d9726d75.css?body=1" for ::1 at 2016-03-02 21:27:03 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-03-02 21:27:03 -0800
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:27:03 -0800
+Started GET "/assets/session.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:27:03 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-02 21:27:03 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-03-02 21:27:03 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-02 21:27:03 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-03-02 21:27:03 -0800
+Started GET "/assets/components/oneProduct.self-0376c6c104c59041215e227bb1df6d2ca19c1377a976408c9e123c537d9051d8.js?body=1" for ::1 at 2016-03-02 21:27:03 -0800
+Started GET "/assets/components/product.self-05c801ef1b5fcb6fc29f36d34ef96fa83d2284c8bebd26a43565eefce8741171.js?body=1" for ::1 at 2016-03-02 21:27:03 -0800
+Started GET "/assets/components/products.self-99eb8b03be2964bcfc90710378562bac25d6a98eb58ae3f849049596244bf08c.js?body=1" for ::1 at 2016-03-02 21:27:03 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-03-02 21:27:03 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-03-02 21:27:03 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:27:03 -0800
+Started GET "/assets/user.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:27:03 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-03-02 21:27:03 -0800
+Started GET "/assets/user.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:27:03 -0800
+Started GET "/product/2" for ::1 at 2016-03-02 21:30:38 -0800
+Processing by ProductController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered product/show.html.erb within layouts/application (0.7ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered shared/_nav.html.erb (1.6ms)
+Completed 200 OK in 767ms (Views: 764.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/admin.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:30:39 -0800
+Started GET "/assets/logins.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:30:39 -0800
+Started GET "/assets/main.self-0b6713181507fb9287320b57d2532f6d0fb43eeb45ef27be32148117d9726d75.css?body=1" for ::1 at 2016-03-02 21:30:39 -0800
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:30:39 -0800
+Started GET "/assets/session.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:30:39 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-03-02 21:30:39 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-03-02 21:30:39 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-03-02 21:30:39 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-02 21:30:39 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-02 21:30:39 -0800
+Started GET "/assets/components/oneProduct.self-3c1a9eb88e914fc1119b529089472a77c0ce30912601076f8056461b1e85361d.js?body=1" for ::1 at 2016-03-02 21:30:39 -0800
+Started GET "/assets/components/product.self-05c801ef1b5fcb6fc29f36d34ef96fa83d2284c8bebd26a43565eefce8741171.js?body=1" for ::1 at 2016-03-02 21:30:39 -0800
+Started GET "/assets/components/products.self-99eb8b03be2964bcfc90710378562bac25d6a98eb58ae3f849049596244bf08c.js?body=1" for ::1 at 2016-03-02 21:30:39 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-03-02 21:30:39 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-03-02 21:30:39 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:30:39 -0800
+Started GET "/assets/user.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:30:39 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-03-02 21:30:39 -0800
+Started GET "/assets/user.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:30:39 -0800
+Started GET "/product/2" for ::1 at 2016-03-02 21:30:58 -0800
+Processing by ProductController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered product/show.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered shared/_nav.html.erb (1.8ms)
+Completed 200 OK in 676ms (Views: 671.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/admin.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:30:59 -0800
+Started GET "/assets/logins.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:30:59 -0800
+Started GET "/assets/main.self-0b6713181507fb9287320b57d2532f6d0fb43eeb45ef27be32148117d9726d75.css?body=1" for ::1 at 2016-03-02 21:30:59 -0800
+Started GET "/assets/session.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:30:59 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-03-02 21:30:59 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-02 21:30:59 -0800
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:30:59 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-02 21:30:59 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-03-02 21:30:59 -0800
+Started GET "/assets/components/oneProduct.self-3bd28020b4634913b8d7cbd40ef5bba8280358f631b2e44e70d2fb9055248c64.js?body=1" for ::1 at 2016-03-02 21:30:59 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-03-02 21:30:59 -0800
+Started GET "/assets/components/product.self-05c801ef1b5fcb6fc29f36d34ef96fa83d2284c8bebd26a43565eefce8741171.js?body=1" for ::1 at 2016-03-02 21:30:59 -0800
+Started GET "/assets/components/products.self-99eb8b03be2964bcfc90710378562bac25d6a98eb58ae3f849049596244bf08c.js?body=1" for ::1 at 2016-03-02 21:30:59 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-03-02 21:30:59 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:30:59 -0800
+Started GET "/assets/user.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:30:59 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-03-02 21:30:59 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-03-02 21:30:59 -0800
+Started GET "/assets/user.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:30:59 -0800
+Started GET "/product/2" for ::1 at 2016-03-02 21:31:40 -0800
+Processing by ProductController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered product/show.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered shared/_nav.html.erb (1.1ms)
+Completed 200 OK in 30ms (Views: 27.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/admin.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:31:40 -0800
+Started GET "/assets/logins.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:31:40 -0800
+Started GET "/assets/main.self-0b6713181507fb9287320b57d2532f6d0fb43eeb45ef27be32148117d9726d75.css?body=1" for ::1 at 2016-03-02 21:31:40 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-03-02 21:31:40 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-02 21:31:40 -0800
+Started GET "/assets/session.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:31:40 -0800
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:31:40 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-02 21:31:40 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-03-02 21:31:40 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-03-02 21:31:40 -0800
+Started GET "/assets/components/product.self-05c801ef1b5fcb6fc29f36d34ef96fa83d2284c8bebd26a43565eefce8741171.js?body=1" for ::1 at 2016-03-02 21:31:40 -0800
+Started GET "/assets/components/oneProduct.self-0376c6c104c59041215e227bb1df6d2ca19c1377a976408c9e123c537d9051d8.js?body=1" for ::1 at 2016-03-02 21:31:40 -0800
+Started GET "/assets/components/products.self-99eb8b03be2964bcfc90710378562bac25d6a98eb58ae3f849049596244bf08c.js?body=1" for ::1 at 2016-03-02 21:31:40 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-03-02 21:31:40 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-03-02 21:31:40 -0800
+Started GET "/assets/user.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:31:40 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:31:40 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-03-02 21:31:40 -0800
+Started GET "/assets/user.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:31:40 -0800
+Started GET "/product/2" for ::1 at 2016-03-02 21:33:24 -0800
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ProductController> at /Users/Joey/Documents/rails-react/app/controllers/product_controller.rb:3)
+Processing by ProductController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered product/show.html.erb within layouts/application (0.7ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered shared/_nav.html.erb (11.4ms)
+Completed 200 OK in 45ms (Views: 34.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/admin.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:33:24 -0800
+Started GET "/assets/logins.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:33:24 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-03-02 21:33:24 -0800
+Started GET "/assets/main.self-0b6713181507fb9287320b57d2532f6d0fb43eeb45ef27be32148117d9726d75.css?body=1" for ::1 at 2016-03-02 21:33:24 -0800
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:33:24 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-02 21:33:24 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-02 21:33:24 -0800
+Started GET "/assets/session.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:33:24 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-03-02 21:33:24 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-03-02 21:33:24 -0800
+Started GET "/assets/components/oneProduct.self-0376c6c104c59041215e227bb1df6d2ca19c1377a976408c9e123c537d9051d8.js?body=1" for ::1 at 2016-03-02 21:33:24 -0800
+Started GET "/assets/components/product.self-05c801ef1b5fcb6fc29f36d34ef96fa83d2284c8bebd26a43565eefce8741171.js?body=1" for ::1 at 2016-03-02 21:33:24 -0800
+Started GET "/assets/components/products.self-99eb8b03be2964bcfc90710378562bac25d6a98eb58ae3f849049596244bf08c.js?body=1" for ::1 at 2016-03-02 21:33:24 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-03-02 21:33:24 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-03-02 21:33:24 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:33:24 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-03-02 21:33:24 -0800
+Started GET "/assets/user.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:33:24 -0800
+Started GET "/assets/user.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:33:25 -0800
+Started GET "/product/2" for ::1 at 2016-03-02 21:33:37 -0800
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ProductController> at /Users/Joey/Documents/rails-react/app/controllers/product_controller.rb:3)
+Processing by ProductController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered product/show.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered shared/_nav.html.erb (26.1ms)
+Completed 200 OK in 69ms (Views: 56.6ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/admin.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:33:38 -0800
+Started GET "/assets/logins.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:33:38 -0800
+Started GET "/assets/main.self-0b6713181507fb9287320b57d2532f6d0fb43eeb45ef27be32148117d9726d75.css?body=1" for ::1 at 2016-03-02 21:33:38 -0800
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:33:38 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-02 21:33:38 -0800
+Started GET "/assets/user.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:33:38 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-03-02 21:33:38 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-02 21:33:38 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-03-02 21:33:38 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-03-02 21:33:38 -0800
+Started GET "/assets/components/oneProduct.self-0376c6c104c59041215e227bb1df6d2ca19c1377a976408c9e123c537d9051d8.js?body=1" for ::1 at 2016-03-02 21:33:38 -0800
+Started GET "/assets/components/product.self-05c801ef1b5fcb6fc29f36d34ef96fa83d2284c8bebd26a43565eefce8741171.js?body=1" for ::1 at 2016-03-02 21:33:38 -0800
+Started GET "/assets/components/products.self-99eb8b03be2964bcfc90710378562bac25d6a98eb58ae3f849049596244bf08c.js?body=1" for ::1 at 2016-03-02 21:33:38 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-03-02 21:33:38 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:33:38 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-03-02 21:33:38 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-03-02 21:33:38 -0800
+Started GET "/assets/user.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:33:38 -0800
+Started GET "/assets/session.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:33:38 -0800
+Started GET "/product/2" for ::1 at 2016-03-02 21:33:38 -0800
+Processing by ProductController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (1.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered product/show.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered shared/_nav.html.erb (2.2ms)
+Completed 200 OK in 62ms (Views: 55.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/admin.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:33:38 -0800
+Started GET "/assets/logins.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:33:38 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-03-02 21:33:38 -0800
+Started GET "/assets/main.self-0b6713181507fb9287320b57d2532f6d0fb43eeb45ef27be32148117d9726d75.css?body=1" for ::1 at 2016-03-02 21:33:38 -0800
+Started GET "/assets/user.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:33:38 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-02 21:33:38 -0800
+Started GET "/assets/session.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:33:38 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-02 21:33:38 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-03-02 21:33:38 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-03-02 21:33:38 -0800
+Started GET "/assets/components/oneProduct.self-0376c6c104c59041215e227bb1df6d2ca19c1377a976408c9e123c537d9051d8.js?body=1" for ::1 at 2016-03-02 21:33:38 -0800
+Started GET "/assets/components/product.self-05c801ef1b5fcb6fc29f36d34ef96fa83d2284c8bebd26a43565eefce8741171.js?body=1" for ::1 at 2016-03-02 21:33:38 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-03-02 21:33:38 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:33:38 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-03-02 21:33:38 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-03-02 21:33:38 -0800
+Started GET "/assets/user.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:33:38 -0800
+Started GET "/assets/components/products.self-99eb8b03be2964bcfc90710378562bac25d6a98eb58ae3f849049596244bf08c.js?body=1" for ::1 at 2016-03-02 21:33:38 -0800
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:33:39 -0800
+Started GET "/product/2" for ::1 at 2016-03-02 21:33:45 -0800
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ProductController> at /Users/Joey/Documents/rails-react/app/controllers/product_controller.rb:3)
+Processing by ProductController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered product/show.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered shared/_nav.html.erb (10.6ms)
+Completed 200 OK in 51ms (Views: 39.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/admin.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:33:45 -0800
+Started GET "/assets/logins.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:33:45 -0800
+Started GET "/assets/user.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:33:45 -0800
+Started GET "/assets/session.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:33:45 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-03-02 21:33:45 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-02 21:33:45 -0800
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:33:45 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-02 21:33:45 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-03-02 21:33:45 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-03-02 21:33:45 -0800
+Started GET "/assets/components/product.self-05c801ef1b5fcb6fc29f36d34ef96fa83d2284c8bebd26a43565eefce8741171.js?body=1" for ::1 at 2016-03-02 21:33:45 -0800
+Started GET "/assets/components/products.self-99eb8b03be2964bcfc90710378562bac25d6a98eb58ae3f849049596244bf08c.js?body=1" for ::1 at 2016-03-02 21:33:45 -0800
+Started GET "/assets/components/oneProduct.self-0376c6c104c59041215e227bb1df6d2ca19c1377a976408c9e123c537d9051d8.js?body=1" for ::1 at 2016-03-02 21:33:45 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-03-02 21:33:45 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-03-02 21:33:45 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-03-02 21:33:45 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:33:45 -0800
+Started GET "/assets/user.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:33:45 -0800
+Started GET "/assets/main.self-0b6713181507fb9287320b57d2532f6d0fb43eeb45ef27be32148117d9726d75.css?body=1" for ::1 at 2016-03-02 21:33:45 -0800
+Started GET "/product/2" for ::1 at 2016-03-02 21:33:55 -0800
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ProductController> at /Users/Joey/Documents/rails-react/app/controllers/product_controller.rb:3)
+Processing by ProductController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered product/show.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered shared/_nav.html.erb (13.7ms)
+Completed 200 OK in 53ms (Views: 39.7ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/admin.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:33:55 -0800
+Started GET "/assets/logins.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:33:55 -0800
+Started GET "/assets/main.self-0b6713181507fb9287320b57d2532f6d0fb43eeb45ef27be32148117d9726d75.css?body=1" for ::1 at 2016-03-02 21:33:55 -0800
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:33:55 -0800
+Started GET "/assets/session.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:33:55 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-03-02 21:33:55 -0800
+Started GET "/assets/user.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:33:55 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-02 21:33:55 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-03-02 21:33:55 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-02 21:33:55 -0800
+Started GET "/assets/components/product.self-05c801ef1b5fcb6fc29f36d34ef96fa83d2284c8bebd26a43565eefce8741171.js?body=1" for ::1 at 2016-03-02 21:33:55 -0800
+Started GET "/assets/components/oneProduct.self-0376c6c104c59041215e227bb1df6d2ca19c1377a976408c9e123c537d9051d8.js?body=1" for ::1 at 2016-03-02 21:33:55 -0800
+Started GET "/assets/components/products.self-99eb8b03be2964bcfc90710378562bac25d6a98eb58ae3f849049596244bf08c.js?body=1" for ::1 at 2016-03-02 21:33:55 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-03-02 21:33:55 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-03-02 21:33:55 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:33:55 -0800
+Started GET "/assets/user.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:33:55 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-03-02 21:33:55 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-03-02 21:33:56 -0800
+Started GET "/product/2" for ::1 at 2016-03-02 21:34:01 -0800
+Processing by ProductController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered product/show.html.erb within layouts/application (0.7ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered shared/_nav.html.erb (1.4ms)
+Completed 200 OK in 32ms (Views: 28.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/admin.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:34:02 -0800
+Started GET "/assets/logins.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:34:02 -0800
+Started GET "/assets/user.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:34:02 -0800
+Started GET "/assets/main.self-0b6713181507fb9287320b57d2532f6d0fb43eeb45ef27be32148117d9726d75.css?body=1" for ::1 at 2016-03-02 21:34:02 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-03-02 21:34:02 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-02 21:34:02 -0800
+Started GET "/assets/session.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:34:02 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-03-02 21:34:02 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-02 21:34:02 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-03-02 21:34:02 -0800
+Started GET "/assets/components/product.self-05c801ef1b5fcb6fc29f36d34ef96fa83d2284c8bebd26a43565eefce8741171.js?body=1" for ::1 at 2016-03-02 21:34:02 -0800
+Started GET "/assets/components/oneProduct.self-0376c6c104c59041215e227bb1df6d2ca19c1377a976408c9e123c537d9051d8.js?body=1" for ::1 at 2016-03-02 21:34:02 -0800
+Started GET "/assets/components/products.self-99eb8b03be2964bcfc90710378562bac25d6a98eb58ae3f849049596244bf08c.js?body=1" for ::1 at 2016-03-02 21:34:02 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-03-02 21:34:02 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:34:02 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-03-02 21:34:02 -0800
+Started GET "/assets/user.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:34:02 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-03-02 21:34:02 -0800
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:34:02 -0800
+Started GET "/product/2" for ::1 at 2016-03-02 21:34:02 -0800
+Processing by ProductController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered product/show.html.erb within layouts/application (11.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered shared/_nav.html.erb (3.0ms)
+Completed 200 OK in 83ms (Views: 80.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/admin.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:34:02 -0800
+Started GET "/assets/logins.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:34:02 -0800
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:34:02 -0800
+Started GET "/assets/main.self-0b6713181507fb9287320b57d2532f6d0fb43eeb45ef27be32148117d9726d75.css?body=1" for ::1 at 2016-03-02 21:34:02 -0800
+Started GET "/assets/user.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:34:02 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-03-02 21:34:02 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-03-02 21:34:02 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-02 21:34:02 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-02 21:34:02 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-03-02 21:34:02 -0800
+Started GET "/assets/components/oneProduct.self-0376c6c104c59041215e227bb1df6d2ca19c1377a976408c9e123c537d9051d8.js?body=1" for ::1 at 2016-03-02 21:34:02 -0800
+Started GET "/assets/components/product.self-05c801ef1b5fcb6fc29f36d34ef96fa83d2284c8bebd26a43565eefce8741171.js?body=1" for ::1 at 2016-03-02 21:34:02 -0800
+Started GET "/assets/components/products.self-99eb8b03be2964bcfc90710378562bac25d6a98eb58ae3f849049596244bf08c.js?body=1" for ::1 at 2016-03-02 21:34:02 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-03-02 21:34:02 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-03-02 21:34:02 -0800
+Started GET "/assets/user.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:34:02 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:34:02 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-03-02 21:34:02 -0800
+Started GET "/assets/session.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:34:03 -0800
+Started GET "/product/2" for ::1 at 2016-03-02 21:34:04 -0800
+Processing by ProductController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered product/show.html.erb within layouts/application (0.7ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered shared/_nav.html.erb (1.3ms)
+Completed 200 OK in 39ms (Views: 36.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/admin.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:34:04 -0800
+Started GET "/assets/logins.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:34:04 -0800
+Started GET "/assets/main.self-0b6713181507fb9287320b57d2532f6d0fb43eeb45ef27be32148117d9726d75.css?body=1" for ::1 at 2016-03-02 21:34:04 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-03-02 21:34:04 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-02 21:34:04 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-03-02 21:34:04 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-02 21:34:04 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-03-02 21:34:04 -0800
+Started GET "/assets/session.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:34:04 -0800
+Started GET "/assets/user.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:34:04 -0800
+Started GET "/assets/components/oneProduct.self-0376c6c104c59041215e227bb1df6d2ca19c1377a976408c9e123c537d9051d8.js?body=1" for ::1 at 2016-03-02 21:34:04 -0800
+Started GET "/assets/components/product.self-05c801ef1b5fcb6fc29f36d34ef96fa83d2284c8bebd26a43565eefce8741171.js?body=1" for ::1 at 2016-03-02 21:34:04 -0800
+Started GET "/assets/components/products.self-99eb8b03be2964bcfc90710378562bac25d6a98eb58ae3f849049596244bf08c.js?body=1" for ::1 at 2016-03-02 21:34:04 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-03-02 21:34:04 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-03-02 21:34:04 -0800
+Started GET "/assets/user.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:34:04 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:34:04 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-03-02 21:34:04 -0800
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:34:04 -0800
+Started GET "/product/2" for ::1 at 2016-03-02 21:34:14 -0800
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ProductController> at /Users/Joey/Documents/rails-react/app/controllers/product_controller.rb:3)
+Processing by ProductController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered product/show.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered shared/_nav.html.erb (11.9ms)
+Completed 200 OK in 54ms (Views: 42.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/admin.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:34:14 -0800
+Started GET "/assets/logins.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:34:14 -0800
+Started GET "/assets/session.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:34:14 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-03-02 21:34:14 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-02 21:34:14 -0800
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:34:14 -0800
+Started GET "/assets/main.self-0b6713181507fb9287320b57d2532f6d0fb43eeb45ef27be32148117d9726d75.css?body=1" for ::1 at 2016-03-02 21:34:14 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-02 21:34:14 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-03-02 21:34:14 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-03-02 21:34:14 -0800
+Started GET "/assets/components/product.self-05c801ef1b5fcb6fc29f36d34ef96fa83d2284c8bebd26a43565eefce8741171.js?body=1" for ::1 at 2016-03-02 21:34:14 -0800
+Started GET "/assets/components/oneProduct.self-0376c6c104c59041215e227bb1df6d2ca19c1377a976408c9e123c537d9051d8.js?body=1" for ::1 at 2016-03-02 21:34:14 -0800
+Started GET "/assets/components/products.self-99eb8b03be2964bcfc90710378562bac25d6a98eb58ae3f849049596244bf08c.js?body=1" for ::1 at 2016-03-02 21:34:14 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-03-02 21:34:14 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-03-02 21:34:14 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:34:14 -0800
+Started GET "/assets/user.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:34:14 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-03-02 21:34:14 -0800
+Started GET "/assets/user.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:34:14 -0800
+Started GET "/product/2" for ::1 at 2016-03-02 21:34:16 -0800
+Processing by ProductController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered product/show.html.erb within layouts/application (0.7ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered shared/_nav.html.erb (1.2ms)
+Completed 200 OK in 29ms (Views: 27.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/admin.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:34:16 -0800
+Started GET "/assets/logins.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:34:16 -0800
+Started GET "/assets/main.self-0b6713181507fb9287320b57d2532f6d0fb43eeb45ef27be32148117d9726d75.css?body=1" for ::1 at 2016-03-02 21:34:16 -0800
+Started GET "/assets/user.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:34:16 -0800
+Started GET "/assets/session.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:34:16 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-02 21:34:16 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-03-02 21:34:16 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-02 21:34:16 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-03-02 21:34:16 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-03-02 21:34:16 -0800
+Started GET "/assets/components/oneProduct.self-0376c6c104c59041215e227bb1df6d2ca19c1377a976408c9e123c537d9051d8.js?body=1" for ::1 at 2016-03-02 21:34:16 -0800
+Started GET "/assets/components/product.self-05c801ef1b5fcb6fc29f36d34ef96fa83d2284c8bebd26a43565eefce8741171.js?body=1" for ::1 at 2016-03-02 21:34:16 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-03-02 21:34:16 -0800
+Started GET "/assets/components/products.self-99eb8b03be2964bcfc90710378562bac25d6a98eb58ae3f849049596244bf08c.js?body=1" for ::1 at 2016-03-02 21:34:16 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:34:16 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-03-02 21:34:16 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-03-02 21:34:16 -0800
+Started GET "/assets/user.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:34:16 -0800
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:34:16 -0800
+Started GET "/product/2" for ::1 at 2016-03-02 21:34:18 -0800
+Processing by ProductController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered product/show.html.erb within layouts/application (0.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered shared/_nav.html.erb (2.1ms)
+Completed 200 OK in 38ms (Views: 35.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/admin.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:34:18 -0800
+Started GET "/assets/logins.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:34:18 -0800
+Started GET "/assets/main.self-0b6713181507fb9287320b57d2532f6d0fb43eeb45ef27be32148117d9726d75.css?body=1" for ::1 at 2016-03-02 21:34:18 -0800
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:34:18 -0800
+Started GET "/assets/session.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:34:18 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-03-02 21:34:18 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-02 21:34:18 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-02 21:34:18 -0800
+Started GET "/assets/components/oneProduct.self-0376c6c104c59041215e227bb1df6d2ca19c1377a976408c9e123c537d9051d8.js?body=1" for ::1 at 2016-03-02 21:34:18 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-03-02 21:34:18 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-03-02 21:34:18 -0800
+Started GET "/assets/components/product.self-05c801ef1b5fcb6fc29f36d34ef96fa83d2284c8bebd26a43565eefce8741171.js?body=1" for ::1 at 2016-03-02 21:34:18 -0800
+Started GET "/assets/components/products.self-99eb8b03be2964bcfc90710378562bac25d6a98eb58ae3f849049596244bf08c.js?body=1" for ::1 at 2016-03-02 21:34:18 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-03-02 21:34:18 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-03-02 21:34:18 -0800
+Started GET "/assets/user.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:34:18 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:34:18 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-03-02 21:34:18 -0800
+Started GET "/assets/user.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:34:18 -0800
+Started GET "/product/2" for ::1 at 2016-03-02 21:34:27 -0800
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ProductController> at /Users/Joey/Documents/rails-react/app/controllers/product_controller.rb:3)
+Processing by ProductController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered product/show.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered shared/_nav.html.erb (17.0ms)
+Completed 200 OK in 60ms (Views: 47.3ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/logins.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:34:27 -0800
+Started GET "/assets/main.self-0b6713181507fb9287320b57d2532f6d0fb43eeb45ef27be32148117d9726d75.css?body=1" for ::1 at 2016-03-02 21:34:27 -0800
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:34:27 -0800
+Started GET "/assets/user.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:34:27 -0800
+Started GET "/assets/admin.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:34:27 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-03-02 21:34:27 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-02 21:34:27 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-02 21:34:27 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-03-02 21:34:27 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-03-02 21:34:27 -0800
+Started GET "/assets/components/product.self-05c801ef1b5fcb6fc29f36d34ef96fa83d2284c8bebd26a43565eefce8741171.js?body=1" for ::1 at 2016-03-02 21:34:27 -0800
+Started GET "/assets/components/products.self-99eb8b03be2964bcfc90710378562bac25d6a98eb58ae3f849049596244bf08c.js?body=1" for ::1 at 2016-03-02 21:34:27 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-03-02 21:34:27 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-03-02 21:34:27 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:34:27 -0800
+Started GET "/assets/user.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:34:27 -0800
+Started GET "/assets/components/oneProduct.self-0376c6c104c59041215e227bb1df6d2ca19c1377a976408c9e123c537d9051d8.js?body=1" for ::1 at 2016-03-02 21:34:27 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-03-02 21:34:27 -0800
+Started GET "/assets/session.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:34:27 -0800
+Started GET "/product/2" for ::1 at 2016-03-02 21:34:29 -0800
+Processing by ProductController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered product/show.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered shared/_nav.html.erb (1.4ms)
+Completed 200 OK in 31ms (Views: 27.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/admin.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:34:29 -0800
+Started GET "/assets/session.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:34:29 -0800
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:34:29 -0800
+Started GET "/assets/main.self-0b6713181507fb9287320b57d2532f6d0fb43eeb45ef27be32148117d9726d75.css?body=1" for ::1 at 2016-03-02 21:34:29 -0800
+Started GET "/assets/logins.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:34:29 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-03-02 21:34:29 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-02 21:34:29 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-03-02 21:34:29 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-02 21:34:29 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-03-02 21:34:29 -0800
+Started GET "/assets/components/oneProduct.self-0376c6c104c59041215e227bb1df6d2ca19c1377a976408c9e123c537d9051d8.js?body=1" for ::1 at 2016-03-02 21:34:29 -0800
+Started GET "/assets/components/product.self-05c801ef1b5fcb6fc29f36d34ef96fa83d2284c8bebd26a43565eefce8741171.js?body=1" for ::1 at 2016-03-02 21:34:29 -0800
+Started GET "/assets/components/products.self-99eb8b03be2964bcfc90710378562bac25d6a98eb58ae3f849049596244bf08c.js?body=1" for ::1 at 2016-03-02 21:34:29 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-03-02 21:34:29 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-03-02 21:34:29 -0800
+Started GET "/assets/user.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:34:29 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-03-02 21:34:29 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:34:29 -0800
+Started GET "/assets/user.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:34:29 -0800
+Started GET "/product/2" for ::1 at 2016-03-02 21:34:30 -0800
+Processing by ProductController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered product/show.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered shared/_nav.html.erb (4.2ms)
+Completed 200 OK in 68ms (Views: 62.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/admin.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:34:30 -0800
+Started GET "/assets/logins.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:34:30 -0800
+Started GET "/assets/session.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:34:30 -0800
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:34:30 -0800
+Started GET "/assets/main.self-0b6713181507fb9287320b57d2532f6d0fb43eeb45ef27be32148117d9726d75.css?body=1" for ::1 at 2016-03-02 21:34:30 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-03-02 21:34:30 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-02 21:34:30 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-03-02 21:34:30 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-03-02 21:34:30 -0800
+Started GET "/assets/components/oneProduct.self-0376c6c104c59041215e227bb1df6d2ca19c1377a976408c9e123c537d9051d8.js?body=1" for ::1 at 2016-03-02 21:34:30 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-02 21:34:30 -0800
+Started GET "/assets/components/product.self-05c801ef1b5fcb6fc29f36d34ef96fa83d2284c8bebd26a43565eefce8741171.js?body=1" for ::1 at 2016-03-02 21:34:30 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-03-02 21:34:30 -0800
+Started GET "/assets/components/products.self-99eb8b03be2964bcfc90710378562bac25d6a98eb58ae3f849049596244bf08c.js?body=1" for ::1 at 2016-03-02 21:34:30 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-03-02 21:34:30 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:34:30 -0800
+Started GET "/assets/user.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:34:30 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-03-02 21:34:30 -0800
+Started GET "/assets/user.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:34:30 -0800
+Started GET "/product/2" for ::1 at 2016-03-02 21:34:30 -0800
+Processing by ProductController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered product/show.html.erb within layouts/application (2.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered shared/_nav.html.erb (2.2ms)
+Completed 200 OK in 61ms (Views: 57.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/admin.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:34:30 -0800
+Started GET "/assets/main.self-0b6713181507fb9287320b57d2532f6d0fb43eeb45ef27be32148117d9726d75.css?body=1" for ::1 at 2016-03-02 21:34:30 -0800
+Started GET "/assets/logins.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:34:30 -0800
+Started GET "/assets/user.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:34:30 -0800
+Started GET "/assets/session.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:34:30 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-03-02 21:34:30 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-02 21:34:30 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-03-02 21:34:30 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-03-02 21:34:30 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-02 21:34:30 -0800
+Started GET "/assets/components/oneProduct.self-0376c6c104c59041215e227bb1df6d2ca19c1377a976408c9e123c537d9051d8.js?body=1" for ::1 at 2016-03-02 21:34:30 -0800
+Started GET "/assets/components/product.self-05c801ef1b5fcb6fc29f36d34ef96fa83d2284c8bebd26a43565eefce8741171.js?body=1" for ::1 at 2016-03-02 21:34:30 -0800
+Started GET "/assets/components/products.self-99eb8b03be2964bcfc90710378562bac25d6a98eb58ae3f849049596244bf08c.js?body=1" for ::1 at 2016-03-02 21:34:30 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-03-02 21:34:30 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-03-02 21:34:30 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:34:30 -0800
+Started GET "/assets/user.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:34:30 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-03-02 21:34:30 -0800
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:34:31 -0800
+Started GET "/product/2" for ::1 at 2016-03-02 21:34:31 -0800
+Processing by ProductController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered product/show.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered shared/_nav.html.erb (1.8ms)
+Completed 200 OK in 35ms (Views: 31.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/admin.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:34:31 -0800
+Started GET "/assets/main.self-0b6713181507fb9287320b57d2532f6d0fb43eeb45ef27be32148117d9726d75.css?body=1" for ::1 at 2016-03-02 21:34:31 -0800
+Started GET "/assets/logins.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:34:31 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-03-02 21:34:31 -0800
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:34:31 -0800
+Started GET "/assets/user.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:34:31 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-02 21:34:31 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-02 21:34:31 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-03-02 21:34:31 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-03-02 21:34:31 -0800
+Started GET "/assets/components/oneProduct.self-0376c6c104c59041215e227bb1df6d2ca19c1377a976408c9e123c537d9051d8.js?body=1" for ::1 at 2016-03-02 21:34:31 -0800
+Started GET "/assets/components/product.self-05c801ef1b5fcb6fc29f36d34ef96fa83d2284c8bebd26a43565eefce8741171.js?body=1" for ::1 at 2016-03-02 21:34:31 -0800
+Started GET "/assets/components/products.self-99eb8b03be2964bcfc90710378562bac25d6a98eb58ae3f849049596244bf08c.js?body=1" for ::1 at 2016-03-02 21:34:32 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-03-02 21:34:32 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-03-02 21:34:32 -0800
+Started GET "/assets/user.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:34:32 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:34:32 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-03-02 21:34:32 -0800
+Started GET "/assets/session.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:34:32 -0800
+Started GET "/product/2" for ::1 at 2016-03-02 21:36:16 -0800
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ProductController> at /Users/Joey/Documents/rails-react/app/controllers/product_controller.rb:3)
+Processing by ProductController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered product/show.html.erb within layouts/application (0.7ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered shared/_nav.html.erb (13.6ms)
+Completed 200 OK in 53ms (Views: 40.9ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/admin.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:36:16 -0800
+Started GET "/assets/logins.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:36:16 -0800
+Started GET "/assets/main.self-0b6713181507fb9287320b57d2532f6d0fb43eeb45ef27be32148117d9726d75.css?body=1" for ::1 at 2016-03-02 21:36:16 -0800
+Started GET "/assets/session.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:36:16 -0800
+Started GET "/assets/user.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:36:16 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-03-02 21:36:16 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-02 21:36:16 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-03-02 21:36:16 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-02 21:36:16 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-03-02 21:36:16 -0800
+Started GET "/assets/components/oneProduct.self-0376c6c104c59041215e227bb1df6d2ca19c1377a976408c9e123c537d9051d8.js?body=1" for ::1 at 2016-03-02 21:36:16 -0800
+Started GET "/assets/components/product.self-05c801ef1b5fcb6fc29f36d34ef96fa83d2284c8bebd26a43565eefce8741171.js?body=1" for ::1 at 2016-03-02 21:36:16 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-03-02 21:36:16 -0800
+Started GET "/assets/components/products.self-99eb8b03be2964bcfc90710378562bac25d6a98eb58ae3f849049596244bf08c.js?body=1" for ::1 at 2016-03-02 21:36:16 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-03-02 21:36:16 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:36:16 -0800
+Started GET "/assets/user.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:36:16 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-03-02 21:36:16 -0800
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:36:16 -0800
+Started GET "/product/2" for ::1 at 2016-03-02 21:37:15 -0800
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ProductController> at /Users/Joey/Documents/rails-react/app/controllers/product_controller.rb:3)
+Processing by ProductController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered product/show.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered shared/_nav.html.erb (10.6ms)
+Completed 200 OK in 57ms (Views: 44.4ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/logins.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:37:15 -0800
+Started GET "/assets/admin.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:37:15 -0800
+Started GET "/assets/main.self-0b6713181507fb9287320b57d2532f6d0fb43eeb45ef27be32148117d9726d75.css?body=1" for ::1 at 2016-03-02 21:37:15 -0800
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:37:15 -0800
+Started GET "/assets/session.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:37:15 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-02 21:37:15 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-03-02 21:37:15 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-02 21:37:15 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-03-02 21:37:15 -0800
+Started GET "/assets/components/oneProduct.self-0376c6c104c59041215e227bb1df6d2ca19c1377a976408c9e123c537d9051d8.js?body=1" for ::1 at 2016-03-02 21:37:15 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-03-02 21:37:15 -0800
+Started GET "/assets/components/product.self-05c801ef1b5fcb6fc29f36d34ef96fa83d2284c8bebd26a43565eefce8741171.js?body=1" for ::1 at 2016-03-02 21:37:15 -0800
+Started GET "/assets/components/products.self-99eb8b03be2964bcfc90710378562bac25d6a98eb58ae3f849049596244bf08c.js?body=1" for ::1 at 2016-03-02 21:37:15 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-03-02 21:37:15 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-03-02 21:37:15 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:37:15 -0800
+Started GET "/assets/user.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:37:15 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-03-02 21:37:15 -0800
+Started GET "/assets/user.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:37:15 -0800
+Started GET "/product/2" for ::1 at 2016-03-02 21:37:18 -0800
+Processing by ProductController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered product/show.html.erb within layouts/application (0.7ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered shared/_nav.html.erb (1.2ms)
+Completed 200 OK in 28ms (Views: 26.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/logins.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:37:18 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-03-02 21:37:18 -0800
+Started GET "/assets/admin.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:37:18 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-02 21:37:18 -0800
+Started GET "/assets/main.self-0b6713181507fb9287320b57d2532f6d0fb43eeb45ef27be32148117d9726d75.css?body=1" for ::1 at 2016-03-02 21:37:18 -0800
+Started GET "/assets/session.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:37:18 -0800
+Started GET "/assets/user.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:37:18 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-02 21:37:18 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-03-02 21:37:18 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-03-02 21:37:18 -0800
+Started GET "/assets/components/oneProduct.self-0376c6c104c59041215e227bb1df6d2ca19c1377a976408c9e123c537d9051d8.js?body=1" for ::1 at 2016-03-02 21:37:18 -0800
+Started GET "/assets/components/product.self-05c801ef1b5fcb6fc29f36d34ef96fa83d2284c8bebd26a43565eefce8741171.js?body=1" for ::1 at 2016-03-02 21:37:18 -0800
+Started GET "/assets/components/products.self-99eb8b03be2964bcfc90710378562bac25d6a98eb58ae3f849049596244bf08c.js?body=1" for ::1 at 2016-03-02 21:37:18 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-03-02 21:37:18 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-03-02 21:37:18 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-03-02 21:37:18 -0800
+Started GET "/assets/user.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:37:18 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:37:18 -0800
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:37:18 -0800
+Started GET "/product/2" for ::1 at 2016-03-02 21:37:26 -0800
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ProductController> at /Users/Joey/Documents/rails-react/app/controllers/product_controller.rb:3)
+Processing by ProductController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered product/show.html.erb within layouts/application (1.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered shared/_nav.html.erb (11.8ms)
+Completed 200 OK in 51ms (Views: 39.5ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/admin.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:37:27 -0800
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:37:27 -0800
+Started GET "/assets/main.self-0b6713181507fb9287320b57d2532f6d0fb43eeb45ef27be32148117d9726d75.css?body=1" for ::1 at 2016-03-02 21:37:27 -0800
+Started GET "/assets/logins.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:37:27 -0800
+Started GET "/assets/user.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:37:27 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-03-02 21:37:27 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-02 21:37:27 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-02 21:37:27 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-03-02 21:37:27 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-03-02 21:37:27 -0800
+Started GET "/assets/components/oneProduct.self-0376c6c104c59041215e227bb1df6d2ca19c1377a976408c9e123c537d9051d8.js?body=1" for ::1 at 2016-03-02 21:37:27 -0800
+Started GET "/assets/components/products.self-99eb8b03be2964bcfc90710378562bac25d6a98eb58ae3f849049596244bf08c.js?body=1" for ::1 at 2016-03-02 21:37:27 -0800
+Started GET "/assets/components/product.self-05c801ef1b5fcb6fc29f36d34ef96fa83d2284c8bebd26a43565eefce8741171.js?body=1" for ::1 at 2016-03-02 21:37:27 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-03-02 21:37:27 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-03-02 21:37:27 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:37:27 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-03-02 21:37:27 -0800
+Started GET "/assets/user.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:37:27 -0800
+Started GET "/assets/session.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:37:27 -0800
+Started GET "/product/2" for ::1 at 2016-03-02 21:38:16 -0800
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ProductController> at /Users/Joey/Documents/rails-react/app/controllers/product_controller.rb:3)
+Processing by ProductController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered product/show.html.erb within layouts/application (0.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered shared/_nav.html.erb (11.5ms)
+Completed 200 OK in 51ms (Views: 39.9ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/admin.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:38:16 -0800
+Started GET "/assets/logins.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:38:16 -0800
+Started GET "/assets/main.self-0b6713181507fb9287320b57d2532f6d0fb43eeb45ef27be32148117d9726d75.css?body=1" for ::1 at 2016-03-02 21:38:16 -0800
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:38:16 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-03-02 21:38:16 -0800
+Started GET "/assets/session.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:38:16 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-02 21:38:16 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-02 21:38:16 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-03-02 21:38:16 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-03-02 21:38:16 -0800
+Started GET "/assets/components/oneProduct.self-0376c6c104c59041215e227bb1df6d2ca19c1377a976408c9e123c537d9051d8.js?body=1" for ::1 at 2016-03-02 21:38:16 -0800
+Started GET "/assets/components/product.self-05c801ef1b5fcb6fc29f36d34ef96fa83d2284c8bebd26a43565eefce8741171.js?body=1" for ::1 at 2016-03-02 21:38:16 -0800
+Started GET "/assets/components/products.self-99eb8b03be2964bcfc90710378562bac25d6a98eb58ae3f849049596244bf08c.js?body=1" for ::1 at 2016-03-02 21:38:16 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-03-02 21:38:16 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:38:16 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-03-02 21:38:16 -0800
+Started GET "/assets/user.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:38:16 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-03-02 21:38:16 -0800
+Started GET "/assets/user.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:38:17 -0800
+Started GET "/product/2" for ::1 at 2016-03-02 21:38:55 -0800
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ProductController> at /Users/Joey/Documents/rails-react/app/controllers/product_controller.rb:3)
+Processing by ProductController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+2107.99
+  Rendered product/show.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered shared/_nav.html.erb (11.0ms)
+Completed 200 OK in 47ms (Views: 36.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:38:55 -0800
+Started GET "/assets/session.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:38:55 -0800
+Started GET "/assets/user.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:38:55 -0800
+Started GET "/assets/logins.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:38:55 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-03-02 21:38:55 -0800
+Started GET "/assets/admin.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:38:55 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-02 21:38:55 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-02 21:38:55 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-03-02 21:38:55 -0800
+Started GET "/assets/components/oneProduct.self-0376c6c104c59041215e227bb1df6d2ca19c1377a976408c9e123c537d9051d8.js?body=1" for ::1 at 2016-03-02 21:38:55 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-03-02 21:38:55 -0800
+Started GET "/assets/components/product.self-05c801ef1b5fcb6fc29f36d34ef96fa83d2284c8bebd26a43565eefce8741171.js?body=1" for ::1 at 2016-03-02 21:38:55 -0800
+Started GET "/assets/components/products.self-99eb8b03be2964bcfc90710378562bac25d6a98eb58ae3f849049596244bf08c.js?body=1" for ::1 at 2016-03-02 21:38:55 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-03-02 21:38:55 -0800
+Started GET "/assets/user.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:38:55 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-03-02 21:38:55 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:38:55 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-03-02 21:38:55 -0800
+Started GET "/assets/main.self-0b6713181507fb9287320b57d2532f6d0fb43eeb45ef27be32148117d9726d75.css?body=1" for ::1 at 2016-03-02 21:38:55 -0800
+Started GET "/product/2" for ::1 at 2016-03-02 21:41:22 -0800
+Processing by ProductController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+2107.99
+  Rendered product/show.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered shared/_nav.html.erb (1.4ms)
+Completed 200 OK in 30ms (Views: 27.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/admin.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:41:22 -0800
+Started GET "/assets/logins.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:41:22 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-03-02 21:41:22 -0800
+Started GET "/assets/main.self-0b6713181507fb9287320b57d2532f6d0fb43eeb45ef27be32148117d9726d75.css?body=1" for ::1 at 2016-03-02 21:41:22 -0800
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:41:22 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-02 21:41:22 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-03-02 21:41:22 -0800
+Started GET "/assets/session.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:41:22 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-03-02 21:41:22 -0800
+Started GET "/assets/components/oneProduct.self-0376c6c104c59041215e227bb1df6d2ca19c1377a976408c9e123c537d9051d8.js?body=1" for ::1 at 2016-03-02 21:41:22 -0800
+Started GET "/assets/components/product.self-05c801ef1b5fcb6fc29f36d34ef96fa83d2284c8bebd26a43565eefce8741171.js?body=1" for ::1 at 2016-03-02 21:41:22 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-02 21:41:22 -0800
+Started GET "/assets/components/products.self-99eb8b03be2964bcfc90710378562bac25d6a98eb58ae3f849049596244bf08c.js?body=1" for ::1 at 2016-03-02 21:41:22 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-03-02 21:41:22 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:41:22 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-03-02 21:41:22 -0800
+Started GET "/assets/user.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:41:22 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-03-02 21:41:22 -0800
+Started GET "/assets/user.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:41:22 -0800
+Started GET "/product/2" for ::1 at 2016-03-02 21:41:24 -0800
+Processing by ProductController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+2107.99
+  Rendered product/show.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered shared/_nav.html.erb (1.3ms)
+Completed 200 OK in 30ms (Views: 27.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/admin.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:41:24 -0800
+Started GET "/assets/main.self-0b6713181507fb9287320b57d2532f6d0fb43eeb45ef27be32148117d9726d75.css?body=1" for ::1 at 2016-03-02 21:41:24 -0800
+Started GET "/assets/logins.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:41:24 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-02 21:41:24 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-02 21:41:24 -0800
+Started GET "/assets/user.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:41:24 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-03-02 21:41:24 -0800
+Started GET "/assets/session.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:41:24 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-03-02 21:41:24 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-03-02 21:41:24 -0800
+Started GET "/assets/components/oneProduct.self-0376c6c104c59041215e227bb1df6d2ca19c1377a976408c9e123c537d9051d8.js?body=1" for ::1 at 2016-03-02 21:41:24 -0800
+Started GET "/assets/components/products.self-99eb8b03be2964bcfc90710378562bac25d6a98eb58ae3f849049596244bf08c.js?body=1" for ::1 at 2016-03-02 21:41:24 -0800
+Started GET "/assets/components/product.self-05c801ef1b5fcb6fc29f36d34ef96fa83d2284c8bebd26a43565eefce8741171.js?body=1" for ::1 at 2016-03-02 21:41:24 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-03-02 21:41:24 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-03-02 21:41:24 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:41:24 -0800
+Started GET "/assets/user.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:41:24 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-03-02 21:41:24 -0800
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:41:25 -0800
+Started GET "/product/2" for ::1 at 2016-03-02 21:41:28 -0800
+Processing by ProductController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+2107.99
+  Rendered product/show.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered shared/_nav.html.erb (1.4ms)
+Completed 200 OK in 39ms (Views: 35.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/admin.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:41:28 -0800
+Started GET "/assets/main.self-0b6713181507fb9287320b57d2532f6d0fb43eeb45ef27be32148117d9726d75.css?body=1" for ::1 at 2016-03-02 21:41:28 -0800
+Started GET "/assets/logins.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:41:28 -0800
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:41:28 -0800
+Started GET "/assets/user.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:41:28 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-02 21:41:28 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-03-02 21:41:28 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-02 21:41:28 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-03-02 21:41:28 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-03-02 21:41:28 -0800
+Started GET "/assets/components/oneProduct.self-0376c6c104c59041215e227bb1df6d2ca19c1377a976408c9e123c537d9051d8.js?body=1" for ::1 at 2016-03-02 21:41:28 -0800
+Started GET "/assets/components/product.self-05c801ef1b5fcb6fc29f36d34ef96fa83d2284c8bebd26a43565eefce8741171.js?body=1" for ::1 at 2016-03-02 21:41:28 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-03-02 21:41:28 -0800
+Started GET "/assets/components/products.self-99eb8b03be2964bcfc90710378562bac25d6a98eb58ae3f849049596244bf08c.js?body=1" for ::1 at 2016-03-02 21:41:28 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:41:28 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-03-02 21:41:28 -0800
+Started GET "/assets/user.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:41:28 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-03-02 21:41:28 -0800
+Started GET "/assets/session.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:41:28 -0800
+Started GET "/product/2" for ::1 at 2016-03-02 21:44:21 -0800
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ProductController> at /Users/Joey/Documents/rails-react/app/controllers/product_controller.rb:3)
+Processing by ProductController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 170114ms (ActiveRecord: 0.6ms)
+
+
+  
+SystemExit (exit):
+  
+app/controllers/product_controller.rb:21:in `show'
+  Rendered /Users/Joey/.rvm/gems/ruby-2.2.2/gems/actionpack-5.0.0.beta3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (245.3ms)
+  Rendered /Users/Joey/.rvm/gems/ruby-2.2.2/gems/actionpack-5.0.0.beta3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (76.8ms)
+  Rendered /Users/Joey/.rvm/gems/ruby-2.2.2/gems/actionpack-5.0.0.beta3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (7.0ms)
+  Rendered /Users/Joey/.rvm/gems/ruby-2.2.2/gems/actionpack-5.0.0.beta3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (388.7ms)
+  Rendered /Users/Joey/.rvm/gems/ruby-2.2.2/gems/web-console-3.1.1/lib/web_console/templates/_markup.html.erb (10.5ms)
+  Rendered /Users/Joey/.rvm/gems/ruby-2.2.2/gems/web-console-3.1.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.6ms)
+  Rendered /Users/Joey/.rvm/gems/ruby-2.2.2/gems/web-console-3.1.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (2.2ms)
+  Rendered /Users/Joey/.rvm/gems/ruby-2.2.2/gems/web-console-3.1.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.5ms)
+  Rendered /Users/Joey/.rvm/gems/ruby-2.2.2/gems/web-console-3.1.1/lib/web_console/templates/console.js.erb within layouts/javascript (192.9ms)
+  Rendered /Users/Joey/.rvm/gems/ruby-2.2.2/gems/web-console-3.1.1/lib/web_console/templates/main.js.erb within layouts/javascript (1.6ms)
+  Rendered /Users/Joey/.rvm/gems/ruby-2.2.2/gems/web-console-3.1.1/lib/web_console/templates/index.html.erb (280.5ms)
+Started GET "/product/2" for ::1 at 2016-03-02 21:47:19 -0800
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ProductController> at /Users/Joey/Documents/rails-react/app/controllers/product_controller.rb:3)
+Processing by ProductController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (1.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered product/show.html.erb within layouts/application (8.2ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered shared/_nav.html.erb (117.9ms)
+Completed 200 OK in 817ms (Views: 671.5ms | ActiveRecord: 10.5ms)
+
+
+Started GET "/assets/admin.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:47:20 -0800
+Started GET "/assets/logins.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:47:21 -0800
+Started GET "/assets/main.self-0b6713181507fb9287320b57d2532f6d0fb43eeb45ef27be32148117d9726d75.css?body=1" for ::1 at 2016-03-02 21:47:21 -0800
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:47:21 -0800
+Started GET "/assets/session.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:47:21 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-03-02 21:47:21 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-02 21:47:21 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-03-02 21:47:21 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-02 21:47:21 -0800
+Started GET "/assets/components/oneProduct.self-0376c6c104c59041215e227bb1df6d2ca19c1377a976408c9e123c537d9051d8.js?body=1" for ::1 at 2016-03-02 21:47:21 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-03-02 21:47:21 -0800
+Started GET "/assets/components/product.self-05c801ef1b5fcb6fc29f36d34ef96fa83d2284c8bebd26a43565eefce8741171.js?body=1" for ::1 at 2016-03-02 21:47:21 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-03-02 21:47:21 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-03-02 21:47:21 -0800
+Started GET "/assets/components/products.self-99eb8b03be2964bcfc90710378562bac25d6a98eb58ae3f849049596244bf08c.js?body=1" for ::1 at 2016-03-02 21:47:21 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:47:21 -0800
+Started GET "/assets/user.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:47:21 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-03-02 21:47:21 -0800
+Started GET "/assets/user.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:47:22 -0800
+Started GET "/product/2" for ::1 at 2016-03-02 21:49:03 -0800
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ProductController> at /Users/Joey/Documents/rails-react/app/controllers/product_controller.rb:3)
+Processing by ProductController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (1.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered product/show.html.erb within layouts/application (20.9ms)
+  [1m[36mUser Load (10.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered shared/_nav.html.erb (127.4ms)
+Completed 200 OK in 999ms (Views: 816.5ms | ActiveRecord: 27.8ms)
+
+
+Started GET "/assets/logins.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:49:05 -0800
+Started GET "/assets/admin.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:49:05 -0800
+Started GET "/assets/main.self-0b6713181507fb9287320b57d2532f6d0fb43eeb45ef27be32148117d9726d75.css?body=1" for ::1 at 2016-03-02 21:49:05 -0800
+Started GET "/assets/session.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:49:05 -0800
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:49:05 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-03-02 21:49:05 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-02 21:49:05 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-02 21:49:05 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-03-02 21:49:05 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-03-02 21:49:05 -0800
+Started GET "/assets/components/oneProduct.self-0376c6c104c59041215e227bb1df6d2ca19c1377a976408c9e123c537d9051d8.js?body=1" for ::1 at 2016-03-02 21:49:05 -0800
+Started GET "/assets/components/product.self-05c801ef1b5fcb6fc29f36d34ef96fa83d2284c8bebd26a43565eefce8741171.js?body=1" for ::1 at 2016-03-02 21:49:05 -0800
+Started GET "/assets/components/products.self-99eb8b03be2964bcfc90710378562bac25d6a98eb58ae3f849049596244bf08c.js?body=1" for ::1 at 2016-03-02 21:49:05 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-03-02 21:49:05 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-03-02 21:49:05 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:49:05 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-03-02 21:49:06 -0800
+Started GET "/assets/user.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:49:06 -0800
+Started GET "/assets/user.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:49:06 -0800
+Started GET "/product/new" for ::1 at 2016-03-02 21:49:28 -0800
+Processing by ProductController#new as HTML
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered product/new.html.erb within layouts/application (1.9ms)
+  Rendered shared/_nav.html.erb (6.7ms)
+Completed 200 OK in 741ms (Views: 707.6ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/logins.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:49:29 -0800
+Started GET "/assets/admin.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:49:29 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-03-02 21:49:29 -0800
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:49:29 -0800
+Started GET "/assets/session.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:49:29 -0800
+Started GET "/assets/main.self-0b6713181507fb9287320b57d2532f6d0fb43eeb45ef27be32148117d9726d75.css?body=1" for ::1 at 2016-03-02 21:49:29 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-02 21:49:29 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-02 21:49:29 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-03-02 21:49:29 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-03-02 21:49:30 -0800
+Started GET "/assets/components/oneProduct.self-0376c6c104c59041215e227bb1df6d2ca19c1377a976408c9e123c537d9051d8.js?body=1" for ::1 at 2016-03-02 21:49:30 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-03-02 21:49:30 -0800
+Started GET "/assets/components/products.self-99eb8b03be2964bcfc90710378562bac25d6a98eb58ae3f849049596244bf08c.js?body=1" for ::1 at 2016-03-02 21:49:30 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:49:30 -0800
+Started GET "/assets/components/product.self-05c801ef1b5fcb6fc29f36d34ef96fa83d2284c8bebd26a43565eefce8741171.js?body=1" for ::1 at 2016-03-02 21:49:30 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-03-02 21:49:30 -0800
+Started GET "/assets/user.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:49:30 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-03-02 21:49:30 -0800
+Started GET "/assets/user.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:49:30 -0800
+Started GET "/product/2" for ::1 at 2016-03-02 21:56:32 -0800
+Processing by ProductController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (1.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered product/show.html.erb within layouts/application (9.7ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered shared/_nav.html.erb (13.8ms)
+Completed 200 OK in 769ms (Views: 745.3ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/logins.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:56:32 -0800
+Started GET "/assets/admin.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:56:33 -0800
+Started GET "/assets/main.self-0b6713181507fb9287320b57d2532f6d0fb43eeb45ef27be32148117d9726d75.css?body=1" for ::1 at 2016-03-02 21:56:33 -0800
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:56:33 -0800
+Started GET "/assets/session.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:56:33 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-03-02 21:56:33 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-03-02 21:56:33 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-02 21:56:33 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-02 21:56:33 -0800
+Started GET "/assets/components/oneProduct.self-0376c6c104c59041215e227bb1df6d2ca19c1377a976408c9e123c537d9051d8.js?body=1" for ::1 at 2016-03-02 21:56:33 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-03-02 21:56:33 -0800
+Started GET "/assets/components/product.self-05c801ef1b5fcb6fc29f36d34ef96fa83d2284c8bebd26a43565eefce8741171.js?body=1" for ::1 at 2016-03-02 21:56:33 -0800
+Started GET "/assets/components/products.self-99eb8b03be2964bcfc90710378562bac25d6a98eb58ae3f849049596244bf08c.js?body=1" for ::1 at 2016-03-02 21:56:33 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-03-02 21:56:33 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-03-02 21:56:33 -0800
+Started GET "/assets/user.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:56:33 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-02 21:56:33 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-03-02 21:56:33 -0800
+Started GET "/assets/user.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-02 21:56:34 -0800
+Started GET "/product" for ::1 at 2016-03-03 17:11:11 -0800
+Processing by ProductController#index as HTML
+  [1m[36mProduct Load (7.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered product/index.html.erb within layouts/application (80.2ms)
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered shared/_nav.html.erb (26.7ms)
+Completed 200 OK in 947ms (Views: 901.8ms | ActiveRecord: 8.5ms)
+
+
+Started GET "/assets/admin.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-03 17:11:12 -0800
+Started GET "/assets/logins.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-03 17:11:12 -0800
+Started GET "/assets/main.self-0b6713181507fb9287320b57d2532f6d0fb43eeb45ef27be32148117d9726d75.css?body=1" for ::1 at 2016-03-03 17:11:12 -0800
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-03 17:11:12 -0800
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-03-03 17:11:12 -0800
+Started GET "/assets/session.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-03 17:11:12 -0800
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-03 17:11:12 -0800
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-03-03 17:11:12 -0800
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-03 17:11:12 -0800
+Started GET "/assets/components/oneProduct.self-0376c6c104c59041215e227bb1df6d2ca19c1377a976408c9e123c537d9051d8.js?body=1" for ::1 at 2016-03-03 17:11:12 -0800
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-03-03 17:11:13 -0800
+Started GET "/assets/components/product.self-05c801ef1b5fcb6fc29f36d34ef96fa83d2284c8bebd26a43565eefce8741171.js?body=1" for ::1 at 2016-03-03 17:11:13 -0800
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-03-03 17:11:13 -0800
+Started GET "/assets/cable.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-03 17:11:13 -0800
+Started GET "/assets/components/products.self-99eb8b03be2964bcfc90710378562bac25d6a98eb58ae3f849049596244bf08c.js?body=1" for ::1 at 2016-03-03 17:11:13 -0800
+Started GET "/assets/action_cable.self-2231fa0726679abb8d086b191624b8ed235eb844eda2cc9471fa0b6cb4c56a09.js?body=1" for ::1 at 2016-03-03 17:11:13 -0800
+Started GET "/assets/user.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-03 17:11:13 -0800
+Started GET "/assets/application.self-9a948507fdee7a653be1d0bf6f1f0f473e58cc56b1fc4ffe2a95d6474014a869.js?body=1" for ::1 at 2016-03-03 17:11:13 -0800
+Started GET "/assets/user.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-03 17:11:13 -0800
+Started GET "/product/new" for ::1 at 2016-03-03 17:11:17 -0800
+Processing by ProductController#new as HTML
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered product/new.html.erb within layouts/application (3.0ms)
+  Rendered shared/_nav.html.erb (17.5ms)
+Completed 200 OK in 815ms (Views: 775.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/product/new" for ::1 at 2016-03-03 17:11:46 -0800
+Processing by ProductController#new as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered product/_form.html.erb (572.1ms)
+  Rendered product/new.html.erb within layouts/application (580.8ms)
+Completed 500 Internal Server Error in 630ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `products_path' for #<#<Class:0x007fb41c48cd30>:0x007fb423804d58>):
+    1: <main>
+    2: <br>
+    3: <%= form_for @product, :html => {:multipart => true} do |f| %>
+    4:   <% if @product.errors.any? %>
+    5:     <div>
+    6:       <%= pluralize(@product.errors.count, "error") %> prevented this product from being submitted.
+  
+app/views/product/_form.html.erb:3:in `_app_views_product__form_html_erb___4257653275643611580_70205784518520'
+app/views/product/new.html.erb:1:in `_app_views_product_new_html_erb___1038077508394720422_70205837045660'
+  Rendered /Users/Joey/.rvm/gems/ruby-2.2.2/gems/actionpack-5.0.0.beta3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (574.6ms)
+  Rendered /Users/Joey/.rvm/gems/ruby-2.2.2/gems/actionpack-5.0.0.beta3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (134.5ms)
+  Rendered /Users/Joey/.rvm/gems/ruby-2.2.2/gems/actionpack-5.0.0.beta3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (10.7ms)
+  Rendered /Users/Joey/.rvm/gems/ruby-2.2.2/gems/actionpack-5.0.0.beta3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (825.3ms)
+  Rendered /Users/Joey/.rvm/gems/ruby-2.2.2/gems/web-console-3.1.1/lib/web_console/templates/_markup.html.erb (3.7ms)
+  Rendered /Users/Joey/.rvm/gems/ruby-2.2.2/gems/web-console-3.1.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (2.0ms)
+  Rendered /Users/Joey/.rvm/gems/ruby-2.2.2/gems/web-console-3.1.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (3.1ms)
+  Rendered /Users/Joey/.rvm/gems/ruby-2.2.2/gems/web-console-3.1.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.9ms)
+  Rendered /Users/Joey/.rvm/gems/ruby-2.2.2/gems/web-console-3.1.1/lib/web_console/templates/console.js.erb within layouts/javascript (108.3ms)
+  Rendered /Users/Joey/.rvm/gems/ruby-2.2.2/gems/web-console-3.1.1/lib/web_console/templates/main.js.erb within layouts/javascript (18.7ms)
+  Rendered /Users/Joey/.rvm/gems/ruby-2.2.2/gems/web-console-3.1.1/lib/web_console/templates/index.html.erb (235.6ms)

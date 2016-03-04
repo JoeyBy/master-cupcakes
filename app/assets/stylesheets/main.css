@@ -3,7 +3,9 @@ body {
   color: rgba(21,21,21,0.8);
   background:#F5F5F5;
 }
-
+.showImage {
+  width: 100%;
+}
 
 .header-image {
   width: 100%;
